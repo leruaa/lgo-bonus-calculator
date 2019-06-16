@@ -1,0 +1,8 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+@primaryColor: #6F759F;
+@darkColor: #333;
+@disabledTextColor: rgba(40, 40, 40, 0.6);
+@defaultBorderRadius: 0em;

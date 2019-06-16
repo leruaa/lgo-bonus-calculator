@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>LGO bonus calculator</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <div id="header" class="ui primary inverted attached basic segment">
+        <div class="ui container">
+            <h1 class="ui huge inverted header">LGO bonus calculator</h1>
+            <div class="ui grid">
+                <div id="wp" class="ten wide column">
+                    <p><a href="https://lgo.group/whitepaper"> From the <cite>LGO white paper</cite></a>:</p>
+                    <p><i class="quote left icon"></i>5% of the initial issuance will be issued each 6 months over 2 years (20% in total).
+                        Each time, the tokens will be distributed to LGO holders who have not sold any LGOs
+                        held at the address where they initially received the tokens. The token will be prorated
+                        between LGO holders who have respected this rule.</p>
+                    <p>This feature is meant as an incentive for participant in the initial LGO token sale to
+                        hold
+                        their tokens for at least two years. <i class="quote right icon"></i></p>
+                </div>
+                <div class="six wide middle aligned center aligned column">
+                    <div id="roi" class="ui inverted huge statistic">
+                        <div class="label">Current ROI</div>
+                        <div class="value loader">
+                            <div class="ui active inline huge loader"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui inverted dark attached basic segment">
+        <div class="ui container">
+            <form class="ui inverted form">
+                <div class="field">
+                    <label for="address">Ethereum address</label>
+                    <input type="text" class="form-control" id="address" aria-describedby="addressHelp">
+                    <small id="emailHelp" class="form-text text-muted">Please enter the ETH address you used for the LGO
+                        ICO</small>
+                </div>
+                <div class="ui right aligned container">
+                    <button id="send" type="button" class="ui primary button">Go!</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="results-pane" class="ui basic segment">
+        <div id="loading" class="ui center aligned container">
+            <div class="ui active huge primary inline loader"></div>
+        </div>
+        <div id="results" class="ui container">
+            <h3 class="ui header">Results</h3>
+            <p>The bonus amounts are computed from the circulating supply
+                (<strong id="circulating-supply" class="ui emphasised text"></strong>), your initial amount brought
+                from ICO (<strong id="initial-amount" class="ui emphasised text"></strong>) and the total unspent amount
+                at the bonus date (or today for future bonuses).</p>
+            <table class="ui very basic table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th class="right aligned">August 15, 2018</th>
+                        <th class="right aligned">February 15, 2019</th>
+                        <th class="right aligned">August 15, 2019</th>
+                        <th class="right aligned">February 15, 2020</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Total unspent amount</strong></td>
+                        <td class="right aligned">
+                            <div class="ui active tiny primary inline loader"></div>
+                        </td>
+                        <td class="right aligned">
+                            <div class="ui active tiny primary inline loader"></div>
+                        </td>
+                        <td class="right aligned">
+                            <div class="ui active tiny primary inline loader"></div>
+                        </td>
+                        <td class="right aligned">
+                            <div class="ui active tiny primary inline loader"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bonus amount</strong></td>
+                        <td class="right aligned">
+                            <div class="ui active tiny primary inline loader"></div>
+                        </td>
+                        <td class="right aligned">
+                            <div class="ui active tiny primary inline loader"></div>
+                        </td>
+                        <td class="right aligned">
+                            <div class="ui active tiny primary inline loader"></div>
+                        </td>
+                        <td class="right aligned">
+                            <div class="ui active tiny primary inline loader"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>ROI</strong></td>
+                        <td class="right aligned">
+                            <div class="ui active tiny primary inline loader"></div>
+                        </td>
+                        <td class="right aligned">
+                            <div class="ui active tiny primary inline loader"></div>
+                        </td>
+                        <td class="right aligned">
+                            <div class="ui active tiny primary inline loader"></div>
+                        </td>
+                        <td class="right aligned">
+                            <div class="ui active tiny primary inline loader"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <a id="fork" href="https://github.com/you">
+        <img width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_gray_6d6d6d.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1">
+    </a>
+    <script src="/main.js"></script>
+</body>
+
+</html>

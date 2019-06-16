@@ -1,0 +1,15 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.segment {
+    padding: 2em;
+}
+
+.ui.primary.inverted.segment {
+    background-color: @primaryColor;
+}
+
+.ui.dark.inverted.segment {
+    background-color: @darkColor;
+}
