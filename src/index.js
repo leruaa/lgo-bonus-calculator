@@ -1,5 +1,5 @@
 import $ from 'jquery'
-import 'fomantic-ui-less/semantic.less';
+import './css/main.less'
 
 import { getUnspentAmount, getinitialAmount } from './js/lgo'
 
