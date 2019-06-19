@@ -67,7 +67,7 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin({
-            cleanOnceBeforeBuildPatterns: ['**/*', '!*.html']
+            cleanOnceBeforeBuildPatterns: ['**/*', '!*.html', "!CNAME"]
         }),
         new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output
