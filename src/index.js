@@ -3,7 +3,7 @@ import './css/main.less'
 
 import { getUnspentAmount, getinitialAmount } from './js/lgo'
 
-const CirculatingSupply = 181415052
+const CirculatingSupply = 18141505200000000
 const BonusTimestamps = [1534291200, 1550188800, 1565827200, 1581724800];
 
 $(document).ready(() => {
@@ -23,8 +23,8 @@ $("#send").click(async () => {
 
     let initialAmount = await getinitialAmount($("#address").val());
 
-    $("#circulating-supply").text(formatNumber(CirculatingSupply) + " LGO")
-    $("#initial-amount").text(formatNumber(initialAmount, 2) + " LGO")
+    $("#circulating-supply").text(formatNumber(CirculatingSupply / 10**8) + " LGO")
+    $("#initial-amount").text(formatNumber(initialAmount / 10**8, 2) + " LGO")
     $("#loading").hide();
     $("#results").show();
 
@@ -47,8 +47,8 @@ $("#send").click(async () => {
                 roiCell.addClass("disabled");
             }
 
-            unspentCell.text(formatNumber(unspentAmount, 2) + " LGO")
-            bonusCell.text(formatNumber(bonusAmount, 2) + " LGO");
+            unspentCell.text(formatNumber(unspentAmount / 10**8, 2) + " LGO")
+            bonusCell.text(formatNumber(bonusAmount / 10**8, 2) + " LGO");
             roiCell.text(formatNumber(roi, 2) + " %");
         });
 

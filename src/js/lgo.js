@@ -26,7 +26,7 @@ export function getUnspentAmount(timestamp) {
             dataType: "json",
             contentType: "application/json; charset=utf-8"
         }).done(function (data) {
-            resolve(parseInt(data.result, 16) / 10**8);
+            resolve(parseInt(data.result, 16));
         })
     });
 }
@@ -53,7 +53,7 @@ export function getinitialAmount(address) {
             dataType: "json",
             contentType: "application/json; charset=utf-8"
         }).done(function (data) {
-            resolve(parseInt(data.result, 16) / 10**8);
+            resolve(parseInt(data.result, 16));
         })
     });
 }
