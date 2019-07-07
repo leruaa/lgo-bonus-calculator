@@ -1,9 +1,17 @@
 const path = require('path');
+const glob = require('glob')
 const mode = process.env.NODE_ENV || 'development';
 const prod = mode === 'production';
 
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const PurgecssPlugin = require('purgecss-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
+const PATHS = {
+    src: path.join(__dirname, 'src')
+  }
 
 module.exports = {
     entry: './src/index.js',
@@ -66,15 +74,23 @@ module.exports = {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin({
-            cleanOnceBeforeBuildPatterns: ['**/*', '!*.html', "!CNAME"]
+        new HtmlWebpackPlugin({
+            template: 'src/index.ejs'
         }),
+        new CleanWebpackPlugin({
+            cleanOnceBeforeBuildPatterns: ['**/*', "!CNAME"]
+        }),
+        new OptimizeCssAssetsPlugin(),
         new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output
             // both options are optional
             filename: '[name].css',
             chunkFilename: '[id].css',
         }),
+        new PurgecssPlugin({
+          paths: glob.sync(`${PATHS.src}/**/*`,  { nodir: true }),
+          rejected: true
+        })
     ],
     mode: mode,
     devtool: prod ? false : 'inline-source-map'

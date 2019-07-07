@@ -3,7 +3,7 @@
     "build": "webpack",
     "buildProd": "NODE_ENV='production' webpack",
     "start": "webpack-dev-server"
-  },
+    },
   "dependencies": {
     "jquery": "^3.4.1"
   },
@@ -14,9 +14,12 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^4.0.0",
     "fomantic-ui-less": "^2.7.5",
+    "html-webpack-plugin": "^3.2.0",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
     "mini-css-extract-plugin": "^0.7.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "purgecss-webpack-plugin": "^1.5.0",
     "style-loader": "^0.23.1",
     "url-loader": "^2.0.0",
     "webpack": "^4.34.0",
