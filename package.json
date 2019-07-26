@@ -2,10 +2,14 @@
   "scripts": {
     "build": "webpack",
     "buildProd": "NODE_ENV='production' webpack",
-    "start": "webpack-dev-server"
-    },
+    "start": "webpack-dev-server",
+    "snapshot": "tsc -p backend && node backend/snapshotOldContract.js http://127.0.0.1:8545"
+  },
   "dependencies": {
-    "jquery": "^3.4.1"
+    "@types/web3": "^1.0.19",
+    "bignumber.js": "^9.0.0",
+    "jquery": "^3.4.1",
+    "web3": "^1.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.0",
@@ -24,6 +28,8 @@
     "url-loader": "^2.0.0",
     "webpack": "^4.34.0",
     "webpack-cli": "^3.3.4",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
     "webpack-dev-server": "^3.7.1"
   }
 }
