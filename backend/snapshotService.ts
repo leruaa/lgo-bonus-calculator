@@ -27,29 +27,34 @@ class Holder {
         this.isEligible = true;
     }
 
-    decrement(value: any) {
-        this.currentBalance.minus(value);
-        this.isEligible == this.currentBalance.isLessThan(this.getCurrentAllocation());
+    decrement(value: BigNumber) {
+        this.currentBalance = this.currentBalance.minus(value);
+        this.isEligible = this.currentBalance.isGreaterThan(this.getCurrentAllocation());
     }
 
-    increment(value: any) {
-        this.currentBalance.plus(value);
-        this.isEligible == this.currentBalance.isLessThan(this.getCurrentAllocation());
+    increment(value: BigNumber) {
+        this.currentBalance = this.currentBalance.plus(value);
+        this.isEligible = this.currentBalance.isGreaterThan(this.getCurrentAllocation());
     }
 
     getCurrentAllocation(): BigNumber {
         return BigNumber.sum(
             this.initialAllocation,
-            this.firstBonus,
-            this.secondBonus,
-            this.thirdBonus,
-            this.fourthBonus);
+            this.firstBonus || 0,
+            this.secondBonus || 0,
+            this.thirdBonus || 0,
+            this.fourthBonus || 0);
     }
 }
 
 const allocations: { [key: string]: string } = require("../config/allocations.json");
-const firstBonusFromAddress = "0x1035a5dd4859a87cf25ed31b0df7436099f7d1c3";
-const secondBonusFromAddress = "0xa5025faba6e70b84f74e9b1113e5f7f4e7f4859f";
+const firstBonusFromAddresses = [
+    "0x1035a5dd4859a87cf25ed31b0df7436099f7d1c3", 
+    "0x808e42cad58f3fdb7bc7c5e4c86620eb2cff22b2",
+    "0x50eb15582cfa559affcc8e4aaef065f9b2ea587d",
+    "0xbfdb0367caabb88b93eff9f63db26cbc7122cfe4"
+];
+const secondBonusFromAddresses = ["0xa5025faba6e70b84f74e9b1113e5f7f4e7f4859f"];
 const lastBlock = 8166887;
 let currentBlock = 5183900;
 
@@ -81,7 +86,7 @@ export async function getSnapshot(tokenContractAddress: string, tokenContractAbi
             const toAddress = transferEvent.returnValues._to.toLowerCase();
             const fromHolder = snapshot.holders[fromAddress];
             const toHolder = snapshot.holders[toAddress];
-            const value = transferEvent.returnValues._value;
+            const value = new BigNumber(transferEvent.returnValues._value).dividedBy(10**tokenDecimals);
 
             if (fromHolder && fromHolder.isEligible) {
                 fromHolder.decrement(value);
@@ -91,11 +96,11 @@ export async function getSnapshot(tokenContractAddress: string, tokenContractAbi
                 toHolder.increment(value);
             }
 
-            if (fromAddress === firstBonusFromAddress) {
-                toHolder.firstBonus = new BigNumber(value);
+            if (firstBonusFromAddresses.indexOf(fromAddress) > -1) {
+                toHolder.firstBonus = value;
             }
-            else if (fromAddress === secondBonusFromAddress) {
-                toHolder.secondBonus = new BigNumber(value);
+            else if (secondBonusFromAddresses.indexOf(fromAddress) > -1) {
+                toHolder.secondBonus = value;
             }
         }
 
@@ -105,3 +110,4 @@ export async function getSnapshot(tokenContractAddress: string, tokenContractAbi
 
     return snapshot;
 }
+
