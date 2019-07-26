@@ -1,4 +1,5 @@
 import { getSnapshot } from './snapshotService';
+import { saveSnapshot } from './persistanceService';
 import { oldTokenContractAddress, oldTokenContractAbi, tokenDecimals } from './settings';
 import {BigNumber} from 'bignumber.js';
 
@@ -13,6 +14,8 @@ import {BigNumber} from 'bignumber.js';
     }
 
     const apiUrl = args[2];
-    const tokenSnapshot = await getSnapshot(oldTokenContractAddress, oldTokenContractAbi, tokenDecimals, apiUrl);
+    const snapshot = await getSnapshot(oldTokenContractAddress, oldTokenContractAbi, tokenDecimals, apiUrl);
+
+    await saveSnapshot(snapshot);
 
 })()
