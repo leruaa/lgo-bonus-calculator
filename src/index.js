@@ -2,6 +2,7 @@ import $ from 'jquery'
 import './css/main.less'
 
 import { BigNumber } from 'bignumber.js';
+import moment from 'moment';
 import snapshot from '../config/snapshot';
 
 BigNumber.config(
@@ -24,7 +25,12 @@ const BonusTimestamps = [1534291200, 1550188800, 1565827200, 1581724800];
 $(document).ready(() => {
     $("#results-pane").hide();
     $("#roi .value").text(currentRoi.toFormat(2) + " %");
-    $("#roi .value").removeClass("loader");
+    $("#latest-block-number").text(snapshot.latestBlockNumber);
+    $(".latest-block-timestamp").text(moment.unix(snapshot.latestBlockTimestamp).format('LLL'));
+    $("#circulating-supply").text(circulatingSupply.toFormat() + " LGO");
+    $("#unspent-amount").text(unspentAmount.toFormat(0) + " LGO");
+    
+    $("#holders-who-lost-bonus").text(snapshot.holdersWhoLostBonus);
 });
 
 $("#send").click(async () => {
@@ -38,9 +44,7 @@ $("#send").click(async () => {
         $("#results .icon").removeClass("check").removeClass("medal").removeClass("ban");
         $("#results-pane").show();
         $("#results").hide();
-        $("#circulating-supply").text(circulatingSupply.toFormat() + " LGO")
         $("#initial-amount").text(initialAllocation.toFormat(2) + " LGO")
-        $("#loading").hide();
         $("#results").show();
     
         for (let i = 0; i < BonusTimestamps.length; i++) {

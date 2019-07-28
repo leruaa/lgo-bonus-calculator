@@ -29,6 +29,10 @@
 }
 
 .ui.emphasised.text {
-    color: @primaryColor;
     border-bottom: 1px dotted @primaryColor;
+}
+
+.inverted .ui.emphasised.text {
+    color: white;
+    border-bottom: 1px dotted @darkColor;
 }

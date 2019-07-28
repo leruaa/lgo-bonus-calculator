@@ -11,22 +11,20 @@
             <h1 class="ui huge inverted header"><i class="coins icon"></i>LGO bonus calculator</h1>
             <div class="ui grid">
                 <div id="wp" class="ten wide column">
-                    <p><a href="https://lgo.group/whitepaper" target="_blank"> From the <cite>LGO white
-                                paper</cite></a>:</p>
-                    <p><i class="quote left icon"></i>5% of the initial issuance will be issued each 6 months over 2
-                        years (20% in total).
-                        Each time, the tokens will be distributed to LGO holders who have not sold any LGOs
-                        held at the address where they initially received the tokens. The token will be prorated
-                        between LGO holders who have respected this rule.</p>
-                    <p>This feature is meant as an incentive for participant in the initial LGO token sale to
-                        hold
-                        their tokens for at least two years. <i class="quote right icon"></i></p>
+                    <p>The data displayed by this tool are extracted from the Ethereum blockchain and
+                        stored in a json file. That mean the data can be not up to date and need to be updated regularly.</p>
+                    <p>As of today, the data are extracted until the block
+                        <span id="latest-block-number" class="ui emphasised text"></span> that was mined on 
+                        <span class="latest-block-timestamp ui emphasised text"></span>. At that time, the total unspent amount was
+                        <span id="unspent-amount" class="ui emphasised text"></span> and
+                        <span id="holders-who-lost-bonus" class="ui emphasised text"></span> holders lost theirs bonus.</p>
+                    <p>The current ROI and the bonus amounts are computed from the circulating supply
+                        (<span id="circulating-supply" class="ui emphasised text"></span>) and the latest known total unspent amount (see above).</p>
                 </div>
                 <div class="six wide middle aligned center aligned column">
                     <div id="roi" class="ui inverted huge statistic">
                         <div class="label">Current ROI</div>
-                        <div class="value loader">
-                            <div class="ui active inline huge loader"></div>
+                        <div class="value">
                         </div>
                     </div>
                 </div>
@@ -48,28 +46,15 @@
             </form>
         </div>
     </div>
-    <div class="ui basic segment">
-        <div class="ui container">
-            <div class="ui icon warning message">
-                <i class="exclamation triangle icon"></i>
-                <div class="content">
-                    This tool is not compatible with the new LGO contract. the data are retrieved from
-                    <a href="https://etherscan.io/address/0x123ab195dd38b1b40510d467a6a359b201af056f">the old
-                        contract</a> and thus are not up to date.
-                </div>
-            </div>
-        </div>
-    </div>
     <div id="results-pane" class="ui basic segment">
-        <div id="loading" class="ui center aligned container">
-            <div class="ui active huge primary inline loader"></div>
-        </div>
         <div id="results" class="ui container">
             <h3 class="ui header">Results</h3>
-            <p>The bonus amounts are computed from the circulating supply
-                (<strong id="circulating-supply" class="ui emphasised text"></strong>), your initial amount brought
-                from ICO (<strong id="initial-amount" class="ui emphasised text"></strong>) and the total unspent amount
-                at the bonus date (or today for future bonuses).</p>
+            <div class="ui icon info message">
+                    <i class="info icon"></i>
+                    <div class="content">
+                        The data displayed below correspond to the state of the Ethereum blockchain was on <strong class="latest-block-timestamp ui emphasised text"></strong>
+                    </div>
+                </div>
             <table class="ui very basic table">
                 <thead>
                     <tr>
