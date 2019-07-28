@@ -1,61 +1,116 @@
 import $ from 'jquery'
 import './css/main.less'
 
-import { getUnspentAmount, getinitialAmount } from './js/lgo'
+import { BigNumber } from 'bignumber.js';
+import snapshot from '../config/snapshot';
 
-const CirculatingSupply = 18141505200000000
+BigNumber.config(
+    {
+        DECIMAL_PLACES: 8,
+        FORMAT: {
+            decimalSeparator: '.',
+            groupSeparator: ',',
+            groupSize: 3
+        }
+    }
+)
+
+const circulatingSupply = new BigNumber(181415052);
+const unspentAmount = BigNumber(snapshot.totalUnspentAmount);
+const currentRoi = circulatingSupply.multipliedBy(5).dividedBy(unspentAmount);
 const BonusTimestamps = [1534291200, 1550188800, 1565827200, 1581724800];
+
 
 $(document).ready(() => {
     $("#results-pane").hide();
-
-    getUnspentAmount(BonusTimestamps[3]).then((unspentAmount) => {
-        let roi = 5 * CirculatingSupply / unspentAmount;
-        $("#roi .value").text(formatNumber(roi, 2) + " %");
-        $("#roi .value").removeClass("loader");
-    });
+    $("#roi .value").text(currentRoi.toFormat(2) + " %");
+    $("#roi .value").removeClass("loader");
 });
 
 $("#send").click(async () => {
+    const address = $("#address").val();
+    const holder = snapshot.holders[address];
 
-    $("#results-pane").show();
-    $("#results").hide();
+    if (holder !== undefined) {
+        const initialAllocation = new BigNumber(holder.initialAllocation);
 
-    let initialAmount = await getinitialAmount($("#address").val());
+        $("#results .label").removeClass("green").removeClass("blue").removeClass("red");
+        $("#results .icon").removeClass("check").removeClass("medal").removeClass("ban");
+        $("#results-pane").show();
+        $("#results").hide();
+        $("#circulating-supply").text(circulatingSupply.toFormat() + " LGO")
+        $("#initial-amount").text(initialAllocation.toFormat(2) + " LGO")
+        $("#loading").hide();
+        $("#results").show();
+    
+        for (let i = 0; i < BonusTimestamps.length; i++) {
+            let now = Date.now() / 1000 | 0;
+            let bonusDate = BonusTimestamps[i];
+            let statusCell = $("#results tbody tr:nth-child(1) td:nth-child(" + (i + 2) + ")");
+            let bonusCell = $("#results tbody tr:nth-child(2) td:nth-child(" + (i + 2) + ")");
+            let roiCell = $("#results tbody tr:nth-child(3) td:nth-child(" + (i + 2) + ")");
+            let headerCell = $("#results thead th:nth-child(" + (i + 2) + ")");
+    
+            let bonusAmount = getbonusAmount(holder, i);
+            let roi;
 
-    $("#circulating-supply").text(formatNumber(CirculatingSupply / 10**8) + " LGO")
-    $("#initial-amount").text(formatNumber(initialAmount / 10**8, 2) + " LGO")
-    $("#loading").hide();
-    $("#results").show();
-
-    for (let i = 0; i < BonusTimestamps.length; i++) {
-        let now = Date.now() / 1000 | 0;
-        let bonusDate = BonusTimestamps[i];
-        let unspentCell = $("#results tbody tr:nth-child(1) td:nth-child(" + (i + 2) + ")");
-        let bonusCell = $("#results tbody tr:nth-child(2) td:nth-child(" + (i + 2) + ")");
-        let roiCell = $("#results tbody tr:nth-child(3) td:nth-child(" + (i + 2) + ")");
-        let headerCell = $("#results thead th:nth-child(" + (i + 2) + ")");
-
-        getUnspentAmount(bonusDate).then((unspentAmount) => {
-            let bonusAmount = CirculatingSupply / unspentAmount * initialAmount * 0.05;
-            let roi = 5 * CirculatingSupply / unspentAmount;
-
-            if (now < bonusDate) {
-                headerCell.addClass("disabled");
-                unspentCell.addClass("disabled");
-                bonusCell.addClass("disabled");
-                roiCell.addClass("disabled");
+            if (bonusAmount.isFinite()) {
+                roi = bonusAmount.dividedBy(initialAllocation).multipliedBy(100);
+                statusCell.find(".label").addClass("green");
+                statusCell.find(".icon").addClass("check");
+                statusCell.find("span").text("Distributed");
             }
+            else {
+                if (bonusDate < now) {
+                    statusCell.find(".label").addClass("red");
+                    statusCell.find(".icon").addClass("ban");
+                    statusCell.find("span").text("Lost");
+                }
+                else {
+                    headerCell.addClass("disabled");
+                    statusCell.addClass("disabled");
+                    bonusCell.addClass("disabled");
+                    roiCell.addClass("disabled");
 
-            unspentCell.text(formatNumber(unspentAmount / 10**8, 2) + " LGO")
-            bonusCell.text(formatNumber(bonusAmount / 10**8, 2) + " LGO");
-            roiCell.text(formatNumber(roi, 2) + " %");
-        });
-
+                    if (holder.isEligible) {
+                        roi = currentRoi;
+                        bonusAmount = initialAllocation.multipliedBy(currentRoi.dividedBy(100));
+                        statusCell.find(".label").addClass("blue");
+                        statusCell.find(".icon").addClass("medal");
+                        statusCell.find("span").text("Eligible");
+                    }
+                    else {
+                        statusCell.find(".label").addClass("red");
+                        statusCell.find(".icon").addClass("ban");
+                        statusCell.find("span").text("Lost");
+                    }
+                }
+            }
+            
+            if (bonusAmount && bonusAmount.isFinite()) {
+                bonusCell.text(bonusAmount.toFormat(2) + " LGO");
+            }
+            else {
+                bonusCell.html("&mdash;");
+            }
+            
+            if (roi && roi.isFinite()) {
+                roiCell.text(roi.toFormat(2) + " %");
+            }
+            else {
+                roiCell.html("&mdash;");
+            }
+        }
     }
+
+    
 });
 
-function formatNumber(val, decimals = 0) {
-    const regEx = decimals == 0 ? /\d(?=(\d{3})+$)/g : /\d(?=(\d{3})+\.)/g;
-    return val.toFixed(decimals).replace(regEx, '$&,');
+function getbonusAmount(holder, index) {
+    switch (index) {
+        case 0: return new BigNumber(holder.firstBonus);
+        case 1: return new BigNumber(holder.secondBonus);
+        case 2: return new BigNumber(holder.thirdBonus);
+        case 3: return new BigNumber(holder.fourthBonus);
+    }
 }
