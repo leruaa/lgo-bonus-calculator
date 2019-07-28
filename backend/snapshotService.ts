@@ -1,9 +1,11 @@
 import { BigNumber } from 'bignumber.js';
-import Web3 from 'web3';
 import { EventLog } from 'web3/types';
+import Contract from 'web3/eth/contract';
+import { Block } from 'web3/eth/types';
 
 export class TokenSnapshot {
-    currentBlock: number;
+    latestBlockNumber: number;
+    latestBlockTimestamp: number;
     holders: { [key: string]: Holder };
     totalUnspentAmount: BigNumber;
     holdersWhoLostBonus: number;
@@ -52,13 +54,10 @@ const firstBonusFromAddresses = [
     "0xcd1b6113945a80ebd42c1ea40a1b93d6fbff199a"
 ];
 const secondBonusFromAddresses = ["0xa5025faba6e70b84f74e9b1113e5f7f4e7f4859f"];
-const lastBlock = 8166887;
 let currentBlock = 5183918;
 
 
-export async function getSnapshot(tokenContractAddress: string, tokenContractAbi: any[], tokenDecimals: number, apiUrl: string) {
-    const web3 = new Web3(new Web3.providers.HttpProvider(apiUrl));
-    const contract = new web3.eth.Contract(tokenContractAbi, tokenContractAddress);
+export async function getSnapshot(contract: Contract, tokenDecimals: number, lastBlock: Block) {
     const snapshot = new TokenSnapshot();
 
     function getPastEvents(key: string, fromBlock: number, toBlock: any): Promise<EventLog[]> {
@@ -73,9 +72,9 @@ export async function getSnapshot(tokenContractAddress: string, tokenContractAbi
     }
 
     console.log("Getting transfers...");
-    while (currentBlock < lastBlock) {
+    while (currentBlock < lastBlock.number) {
         console.log("Current block: " + currentBlock);
-        const toBlock = Math.min(currentBlock + 10000, lastBlock);
+        const toBlock = Math.min(currentBlock + 10000, lastBlock.number);
         const transferEvents: EventLog[] = await getPastEvents('Transfer', currentBlock, toBlock);
 
         for (const transferEvent of transferEvents) {        
@@ -115,6 +114,9 @@ export async function getSnapshot(tokenContractAddress: string, tokenContractAbi
 
         currentBlock = toBlock + 1;
     }
+
+    snapshot.latestBlockNumber = lastBlock.number;
+    snapshot.latestBlockTimestamp = lastBlock.timestamp;
 
     return snapshot;
 }

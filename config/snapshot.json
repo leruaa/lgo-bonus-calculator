@@ -57557,5 +57557,7 @@
         }
     },
     "totalUnspentAmount": "102821558.29077878",
-    "holdersWhoLostBonus": 2278
+    "holdersWhoLostBonus": 2278,
+    "latestBlockNumber": 8166887,
+    "latestBlockTimestamp": 1563347387
 }
