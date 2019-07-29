@@ -36,12 +36,12 @@
             <form class="ui inverted form">
                 <div class="field">
                     <label for="address">Ethereum address</label>
-                    <input type="text" class="form-control" id="address" aria-describedby="addressHelp">
+                    <div class="ui action input">
+                        <input type="text" class="form-control" id="address" aria-describedby="addressHelp">
+                        <button id="send" type="button" class="ui primary button">Go!</button>
+                    </div>
                     <small id="emailHelp" class="form-text text-muted">Please enter the ETH address you used for the LGO
                         ICO</small>
-                </div>
-                <div class="ui right aligned container">
-                    <button id="send" type="button" class="ui primary button">Go!</button>
                 </div>
             </form>
         </div>
