@@ -6,7 +6,7 @@ import { BigNumber } from 'bignumber.js';
 
 (async function () {
 
-    BigNumber.config({DECIMAL_PLACES: 8});
+    BigNumber.config({DECIMAL_PLACES: tokenDecimals});
 
     const args = process.argv;
     if (args.length !== 3) {
@@ -19,7 +19,7 @@ import { BigNumber } from 'bignumber.js';
     const contract = new web3.eth.Contract(oldTokenContractAbi, oldTokenContractAddress);
     const latestBlock = await web3.eth.getBlock(8166887);
 
-    const snapshot = await getSnapshot(contract, tokenDecimals, latestBlock);
+    const snapshot = await getSnapshot(contract, latestBlock, tokenDecimals);
 
     await saveSnapshot(snapshot);
 

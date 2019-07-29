@@ -3,7 +3,8 @@
     "build": "webpack",
     "buildProd": "NODE_ENV='production' webpack",
     "start": "webpack-dev-server",
-    "snapshot": "tsc -p backend && node backend/snapshotOldContract.js http://127.0.0.1:8545"
+    "generateSnapshot": "tsc -p backend && node backend/snapshotOldContract.js http://127.0.0.1:8545",
+    "updateSnapshot": "tsc -p backend && node backend/snapshotNewContract.js http://127.0.0.1:8545"
   },
   "dependencies": {
     "@types/web3": "^1.0.19",
