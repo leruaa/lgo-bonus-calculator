@@ -12,14 +12,18 @@
             <div class="ui grid">
                 <div id="wp" class="ten wide column">
                     <p>The data displayed by this tool are extracted from the Ethereum blockchain and
-                        stored in a json file. That mean the data can be not up to date and need to be updated regularly.</p>
+                        stored in a json file. That mean the data can be not up to date and need to be updated
+                        regularly.</p>
                     <p>As of today, the data are extracted until the block
-                        <span id="latest-block-number" class="ui emphasised text"></span> that was mined on 
-                        <span class="latest-block-timestamp ui emphasised text"></span>. At that time, the total unspent amount was
+                        <span id="latest-block-number" class="ui emphasised text"></span> that was mined on
+                        <span class="latest-block-timestamp ui emphasised text"></span>. At that time, the total unspent
+                        amount was
                         <span id="unspent-amount" class="ui emphasised text"></span> and
-                        <span id="holders-who-lost-bonus" class="ui emphasised text"></span> holders lost theirs bonus.</p>
+                        <span id="holders-who-lost-bonus" class="ui emphasised text"></span> holders lost theirs bonus.
+                    </p>
                     <p>The current ROI and the bonus amounts are computed from the circulating supply
-                        (<span id="circulating-supply" class="ui emphasised text"></span>) and the latest known total unspent amount (see above).</p>
+                        (<span id="circulating-supply" class="ui emphasised text"></span>) and the latest known total
+                        unspent amount (see above).</p>
                 </div>
                 <div class="six wide middle aligned center aligned column">
                     <div id="roi" class="ui inverted huge statistic">
@@ -47,66 +51,73 @@
         </div>
     </div>
     <div id="results-pane" class="ui basic segment">
-        <div id="results" class="ui container">
-            <h3 class="ui header">Results</h3>
-            <div class="ui info message">
+        <div class="ui container">
+            <div id="error" class="ui error message">
+                <i class="exclamation icon"></i>
+                The provided address is not recognised as a ICO holder.
+            </div>
+            <div id="results">
+                <h3 class="ui header">Results</h3>
+                <div class="ui info message">
                     <i class="info icon"></i>
-                    The data displayed below correspond to the state of the Ethereum blockchain was on <strong class="latest-block-timestamp ui emphasised text"></strong>
+                    The data displayed below correspond to the state of the Ethereum blockchain was on <strong
+                        class="latest-block-timestamp ui emphasised text"></strong>
                 </div>
-            <table class="ui very basic table">
-                <thead>
-                    <tr>
-                        <th class="one wide">Bonus</th>
-                        <th class="right aligned">August 15, 2018</th>
-                        <th class="right aligned">February 15, 2019</th>
-                        <th class="right aligned">August 15, 2019</th>
-                        <th class="right aligned">February 15, 2020</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Status</strong></td>
-                        <td class="right aligned">
-                            <div class="ui horizontal label">
-                                <i class="icon"></i>
-                                <span class="text"></span>
-                            </div>
-                        </td>
-                        <td class="right aligned">
-                            <div class="ui horizontal label">
-                                <i class="icon"></i>
-                                <span class="text"></span>
-                            </div>
-                        </td>
-                        <td class="right aligned">
-                            <div class="ui horizontal label">
-                                <i class="icon"></i>
-                                <span class="text"></span>
-                            </div>
-                        </td>
-                        <td class="right aligned">
-                            <div class="ui horizontal label">
-                                <i class="icon"></i>
-                                <span class="text"></span>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>Amount</strong></td>
-                        <td class="right aligned"></td>
-                        <td class="right aligned"></td>
-                        <td class="right aligned"></td>
-                        <td class="right aligned"></td>
-                    </tr>
-                    <tr>
-                        <td><strong>ROI</strong></td>
-                        <td class="right aligned"></td>
-                        <td class="right aligned"></td>
-                        <td class="right aligned"></td>
-                        <td class="right aligned"></td>
-                    </tr>
-                </tbody>
-            </table>
+                <table class="ui very basic table">
+                    <thead>
+                        <tr>
+                            <th class="one wide">Bonus</th>
+                            <th class="right aligned">August 15, 2018</th>
+                            <th class="right aligned">February 15, 2019</th>
+                            <th class="right aligned">August 15, 2019</th>
+                            <th class="right aligned">February 15, 2020</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Status</strong></td>
+                            <td class="right aligned">
+                                <div class="ui horizontal label">
+                                    <i class="icon"></i>
+                                    <span class="text"></span>
+                                </div>
+                            </td>
+                            <td class="right aligned">
+                                <div class="ui horizontal label">
+                                    <i class="icon"></i>
+                                    <span class="text"></span>
+                                </div>
+                            </td>
+                            <td class="right aligned">
+                                <div class="ui horizontal label">
+                                    <i class="icon"></i>
+                                    <span class="text"></span>
+                                </div>
+                            </td>
+                            <td class="right aligned">
+                                <div class="ui horizontal label">
+                                    <i class="icon"></i>
+                                    <span class="text"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Amount</strong></td>
+                            <td class="right aligned"></td>
+                            <td class="right aligned"></td>
+                            <td class="right aligned"></td>
+                            <td class="right aligned"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>ROI</strong></td>
+                            <td class="right aligned"></td>
+                            <td class="right aligned"></td>
+                            <td class="right aligned"></td>
+                            <td class="right aligned"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
     <a id="fork" href="https://github.com/acatinon/lgo-bonus-calculator" target="_blank">

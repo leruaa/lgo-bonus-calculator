@@ -31,21 +31,26 @@ $(document).ready(() => {
     $("#unspent-amount").text(unspentAmount.toFormat(0) + " LGO");
     
     $("#holders-who-lost-bonus").text(snapshot.holdersWhoLostBonus);
+    $("#send").click(onSendClick);
 });
 
-$("#send").click(async () => {
+function onSendClick() {
     const address = $("#address").val();
     const holder = snapshot.holders[address];
-
-    if (holder !== undefined) {
+    $("#results-pane").show();
+    
+    if (holder === undefined) {
+        $("#error").show();
+        $("#results").hide();
+    }
+    else {
         const initialAllocation = new BigNumber(holder.initialAllocation);
-
+        $("#error").hide();
+        $("#results").show();
         $("#results .label").removeClass("green").removeClass("blue").removeClass("red");
         $("#results .icon").removeClass("check").removeClass("medal").removeClass("ban");
-        $("#results-pane").show();
-        $("#results").hide();
         $("#initial-amount").text(initialAllocation.toFormat(2) + " LGO")
-        $("#results").show();
+
     
         for (let i = 0; i < BonusTimestamps.length; i++) {
             let now = Date.now() / 1000 | 0;
@@ -106,9 +111,7 @@ $("#send").click(async () => {
             }
         }
     }
-
-    
-});
+}
 
 function getbonusAmount(holder, index) {
     switch (index) {
