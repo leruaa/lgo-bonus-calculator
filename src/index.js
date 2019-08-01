@@ -35,8 +35,8 @@ $(document).ready(() => {
 });
 
 function onSendClick() {
-    const address = $("#address").val();
-    const holder = snapshot.holders[address];
+    const address = $("#address").val() || "";
+    const holder = snapshot.holders[address.toLowerCase()];
     $("#results-pane").show();
     
     if (holder === undefined) {
