@@ -4418,10 +4418,10 @@
         },
         "0x0dd382958b83b1d7494232d2fb0193f91f8d1564": {
             "initialAllocation": "26125.70371429",
-            "currentBalance": "29601.51585148",
+            "currentBalance": "0",
             "firstBonus": "1709.68193387",
             "secondBonus": "1766.13020332",
-            "isEligible": true
+            "isEligible": false
         },
         "0x4bc5b074690213aba0fb2640d878979adc857de9": {
             "initialAllocation": "7685.71428571",
@@ -49484,10 +49484,10 @@
         },
         "0x6cf0b49e5456322d76321e513964e8dc962c0b76": {
             "initialAllocation": "6000",
-            "currentBalance": "6798.25114191",
+            "currentBalance": "0",
             "firstBonus": "392.64364763",
             "secondBonus": "405.60749428",
-            "isEligible": true
+            "isEligible": false
         },
         "0x40565b99c7c5dab77683c8ee9d62bed44e07048a": {
             "initialAllocation": "3409299.51005498",
@@ -57556,8 +57556,8 @@
             "isEligible": true
         }
     },
-    "totalUnspentAmount": "102716397.34586449",
-    "holdersWhoLostBonus": 2290,
-    "latestBlockNumber": 8292422,
-    "latestBlockTimestamp": 1565032006
+    "totalUnspentAmount": "102684271.6421502",
+    "holdersWhoLostBonus": 2292,
+    "latestBlockNumber": 8311740,
+    "latestBlockTimestamp": 1565290868
 }
