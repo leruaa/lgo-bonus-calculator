@@ -26,8 +26,8 @@ $(document).ready(() => {
     $("#roi .value").text(currentRoi.toFormat(2) + " %");
     $("#latest-block-number").text(snapshot.latestBlockNumber);
     $(".latest-block-timestamp").text(moment.unix(snapshot.latestBlockTimestamp).format('LLL'));
-    $("#circulating-supply").text(circulatingSupply.toFormat() + " LGO");
-    $("#unspent-amount").text(unspentAmount.toFormat(0) + " LGO");
+    $("#circulating-supply").text(circulatingSupply.toFormat());
+    $("#unspent-amount").text(unspentAmount.toFormat(8));
     
     $("#holders-who-lost-bonus").text(snapshot.holdersWhoLostBonus);
     $("#send").click(onSendClick);
@@ -53,7 +53,7 @@ function onSendClick() {
         $("#results").show();
         $("#results .label").removeClass("green").removeClass("blue").removeClass("red");
         $("#results .icon").removeClass("check").removeClass("medal").removeClass("ban");
-        $("#initial-amount").text(initialAllocation.toFormat(2) + " LGO")
+        $("#initial-amount").text(initialAllocation.toFormat(8))
 
     
         for (let i = 0; i < 4; i++) {
@@ -84,14 +84,14 @@ function onSendClick() {
             }
             
             if (bonusAmount.isFinite()) {
-                bonusCell.text(bonusAmount.toFormat(2) + " LGO");
+                bonusCell.text(bonusAmount.toFormat(8) + " LGO");
             }
             else {
                 bonusCell.html("&mdash;");
             }
             
             if (roi && roi.isFinite()) {
-                roiCell.text(roi.toFormat(2) + " %");
+                roiCell.text(roi.toFormat(8) + " %");
             }
             else {
                 roiCell.html("&mdash;");
