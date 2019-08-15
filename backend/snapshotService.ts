@@ -28,12 +28,11 @@ export class Holder {
 
     decrement(value: BigNumber) {
         this.currentBalance = this.currentBalance.minus(value);
-        this.isEligible = this.currentBalance.isGreaterThanOrEqualTo(this.initialAllocation);
+        this.isEligible = this.isEligible && this.currentBalance.isGreaterThanOrEqualTo(this.getEligibilityAmount());
     }
 
     increment(value: BigNumber) {
         this.currentBalance = this.currentBalance.plus(value);
-        this.isEligible = this.currentBalance.isGreaterThanOrEqualTo(this.initialAllocation);
     }
 
     static instanciate(json: any): Holder {
@@ -46,6 +45,17 @@ export class Holder {
         holder.fourthBonus = (json.fourthBonus === undefined ? undefined : new BigNumber(json.fourthBonus));
         holder.isEligible = json.isEligible;
         return holder;
+    }
+
+    getEligibilityAmount(): BigNumber {
+        let sum = new BigNumber(this.initialAllocation);
+
+        if (this.firstBonus) sum = sum.plus(this.firstBonus);
+        if (this.secondBonus) sum = sum.plus(this.secondBonus);
+        if (this.thirdBonus) sum = sum.plus(this.thirdBonus);
+        if (this.fourthBonus) sum = sum.plus(this.fourthBonus);
+
+        return sum;
     }
 }
 
@@ -75,7 +85,6 @@ function handleTransfert(transferEvent: EventLog, snapshot: TokenSnapshot, token
     const toHolder = snapshot.holders[toAddress];
     const value = new BigNumber(transferEvent.returnValues._value || transferEvent.returnValues.value).dividedBy(10 ** tokenDecimals);
     const fromHolderWasEligible = fromHolder && fromHolder.isEligible;
-    const toHolderWasEligible = toHolder && toHolder.isEligible
 
     if (fromAddress === "0x0000000000000000000000000000000000000000") {
         if (idexLockedTokensFixBlocks.indexOf(transferEvent.blockNumber) > -1) {
@@ -86,22 +95,17 @@ function handleTransfert(transferEvent: EventLog, snapshot: TokenSnapshot, token
         return;
     }
 
-    if (fromHolderWasEligible) {
+    if (fromHolder) {
         fromHolder.decrement(value);
     }
 
-    if (toHolderWasEligible) {
+    if (toHolder) {
         toHolder.increment(value);
     }
 
     if (fromHolderWasEligible && !fromHolder.isEligible && fromHolder.initialAllocation.isGreaterThan(0)) {
         snapshot.holdersWhoLostBonus++;
         snapshot.totalUnspentAmount = snapshot.totalUnspentAmount.minus(fromHolder.initialAllocation);
-    }
-
-    if (toHolderWasEligible && !toHolder.isEligible && toHolder.initialAllocation.isGreaterThan(0)) {
-        snapshot.holdersWhoLostBonus++;
-        snapshot.totalUnspentAmount = snapshot.totalUnspentAmount.minus(toHolder.initialAllocation);
     }
 
     if (firstBonusFromAddresses.indexOf(fromAddress) > -1) {
