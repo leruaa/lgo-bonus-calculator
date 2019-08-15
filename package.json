@@ -4,7 +4,8 @@
     "buildProd": "NODE_ENV='production' webpack",
     "start": "webpack-dev-server",
     "generateSnapshot": "tsc -p backend && node backend/snapshotOldContract.js http://127.0.0.1:8545",
-    "updateSnapshot": "tsc -p backend && node backend/snapshotNewContract.js http://127.0.0.1:8545"
+    "updateSnapshot": "tsc -p backend && node backend/snapshotNewContract.js http://127.0.0.1:8545",
+    "convertSnapshotToCsv": "python3 backend/convertSnapshotToCsv.python"
   },
   "dependencies": {
     "@types/web3": "^1.0.19",

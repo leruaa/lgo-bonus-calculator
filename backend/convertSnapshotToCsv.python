@@ -1,0 +1,16 @@
+import json
+import csv
+
+with open("./config/snapshot.json", "r") as jsonFile:
+    data = json.load(jsonFile)
+
+with open('./config/data.csv', 'w') as csvFile:
+    fieldnames = ['address', 'initialAllocation', 'currentBalance', 'firstBonus', 'secondBonus', 'isEligible']
+    writer = csv.DictWriter(csvFile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for a in data["holders"]:
+        i = data["holders"][a]
+        if i["isEligible"] and ("firstBonus" in i or "secondBonus" in i):
+            i["address"] = a
+            writer.writerow(i)
