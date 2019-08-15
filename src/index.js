@@ -19,7 +19,6 @@ BigNumber.config(
 const circulatingSupply = new BigNumber(181415052);
 const unspentAmount = BigNumber(snapshot.totalUnspentAmount);
 const currentRoi = circulatingSupply.multipliedBy(5).dividedBy(unspentAmount);
-const BonusTimestamps = [1534291200, 1550188800, 1565827200, 1581724800];
 
 
 $(document).ready(() => {
@@ -52,13 +51,10 @@ function onSendClick() {
         $("#initial-amount").text(initialAllocation.toFormat(2) + " LGO")
 
     
-        for (let i = 0; i < BonusTimestamps.length; i++) {
-            let now = Date.now() / 1000 | 0;
-            let bonusDate = BonusTimestamps[i];
+        for (let i = 0; i < 4; i++) {
             let statusCell = $("#results tbody tr:nth-child(1) td:nth-child(" + (i + 2) + ")");
             let bonusCell = $("#results tbody tr:nth-child(2) td:nth-child(" + (i + 2) + ")");
             let roiCell = $("#results tbody tr:nth-child(3) td:nth-child(" + (i + 2) + ")");
-            let headerCell = $("#results thead th:nth-child(" + (i + 2) + ")");
     
             let bonusAmount = getbonusAmount(holder, i);
             let roi;
@@ -69,34 +65,20 @@ function onSendClick() {
                 statusCell.find(".icon").addClass("check");
                 statusCell.find("span").text("Distributed");
             }
+            else if (holder.isEligible) {
+                roi = currentRoi;
+                bonusAmount = initialAllocation.multipliedBy(currentRoi.dividedBy(100));
+                statusCell.find(".label").addClass("blue");
+                statusCell.find(".icon").addClass("medal");
+                statusCell.find("span").text("Eligible");
+            }
             else {
-                if (bonusDate < now) {
-                    statusCell.find(".label").addClass("red");
-                    statusCell.find(".icon").addClass("ban");
-                    statusCell.find("span").text("Lost");
-                }
-                else {
-                    headerCell.addClass("disabled");
-                    statusCell.addClass("disabled");
-                    bonusCell.addClass("disabled");
-                    roiCell.addClass("disabled");
-
-                    if (holder.isEligible) {
-                        roi = currentRoi;
-                        bonusAmount = initialAllocation.multipliedBy(currentRoi.dividedBy(100));
-                        statusCell.find(".label").addClass("blue");
-                        statusCell.find(".icon").addClass("medal");
-                        statusCell.find("span").text("Eligible");
-                    }
-                    else {
-                        statusCell.find(".label").addClass("red");
-                        statusCell.find(".icon").addClass("ban");
-                        statusCell.find("span").text("Lost");
-                    }
-                }
+                statusCell.find(".label").addClass("red");
+                statusCell.find(".icon").addClass("ban");
+                statusCell.find("span").text("Lost");
             }
             
-            if (bonusAmount && bonusAmount.isFinite()) {
+            if (bonusAmount.isFinite()) {
                 bonusCell.text(bonusAmount.toFormat(2) + " LGO");
             }
             else {
