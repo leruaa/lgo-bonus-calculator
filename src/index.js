@@ -31,6 +31,11 @@ $(document).ready(() => {
     
     $("#holders-who-lost-bonus").text(snapshot.holdersWhoLostBonus);
     $("#send").click(onSendClick);
+
+    $('form').on('submit', function() {
+        onSendClick();
+        return false;
+    });
 });
 
 function onSendClick() {
