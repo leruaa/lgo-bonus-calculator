@@ -67,7 +67,7 @@ const firstBonusFromAddresses = [
     "0xbfdb0367caabb88b93eff9f63db26cbc7122cfe4",
     "0xcd1b6113945a80ebd42c1ea40a1b93d6fbff199a"
 ];
-const secondBonusFromAddresses = ["0xa5025faba6e70b84f74e9b1113e5f7f4e7f4859f"];
+const secondAndThirdBonusFromAddresses = ["0xa5025faba6e70b84f74e9b1113e5f7f4e7f4859f"];
 
 const idexLockedTokensFixBlocks = [8220538, 8220542, 8220558, 8220565]
 
@@ -111,8 +111,15 @@ function handleTransfert(transferEvent: EventLog, snapshot: TokenSnapshot, token
     if (firstBonusFromAddresses.indexOf(fromAddress) > -1) {
         toHolder.firstBonus = value;
     }
-    else if (secondBonusFromAddresses.indexOf(fromAddress) > -1) {
-        toHolder.secondBonus = value;
+    else if (secondAndThirdBonusFromAddresses.indexOf(fromAddress) > -1) {
+        if (toHolder) {
+            if (transferEvent.blockNumber > 8360000) {
+                toHolder.thirdBonus = value;
+            }
+            else {
+                toHolder.secondBonus = value;
+            }
+        }
     }
 }
 
