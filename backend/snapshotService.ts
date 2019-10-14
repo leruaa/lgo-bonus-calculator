@@ -158,16 +158,23 @@ export async function updateSnapshot(snapshot: TokenSnapshot, contract: Contract
     let currentBlock = snapshot.latestBlockNumber + 1;
 
     console.log("Getting transfers...");
+    let chain = Promise.resolve();
     while (currentBlock < lastBlock.number) {
         console.log("Current block: " + currentBlock);
         const toBlock = Math.min(currentBlock + 10000, lastBlock.number);
-        const transferEvents: EventLog[] = await getPastEvents(contract, 'Transfer', currentBlock, toBlock);
 
-        for (const transferEvent of transferEvents) {
-            handleTransfert(transferEvent, snapshot, tokenDecimals);
+        const transferEvents = await getPastEvents(contract, 'Transfer', currentBlock, toBlock)
+            .catch((reason) => {
+                console.warn("Error: " + reason);
+                console.log("Retring...");
+            });
+
+        if (transferEvents) {
+            for (const transferEvent of transferEvents) {
+                handleTransfert(transferEvent, snapshot, tokenDecimals);
+            }
+            currentBlock = toBlock + 1;
         }
-
-        currentBlock = toBlock + 1;
     }
 
     snapshot.latestBlockNumber = lastBlock.number;
