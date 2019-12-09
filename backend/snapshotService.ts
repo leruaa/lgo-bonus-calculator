@@ -161,7 +161,7 @@ export async function updateSnapshot(snapshot: TokenSnapshot, contract: Contract
     let chain = Promise.resolve();
     while (currentBlock < lastBlock.number) {
         console.log("Current block: " + currentBlock);
-        const toBlock = Math.min(currentBlock + 10000, lastBlock.number);
+        const toBlock = Math.min(currentBlock + 1000, lastBlock.number);
 
         const transferEvents = await getPastEvents(contract, 'Transfer', currentBlock, toBlock)
             .catch((reason) => {
