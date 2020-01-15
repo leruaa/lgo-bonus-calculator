@@ -195,11 +195,12 @@
         },
         "0x8fd525675395e2f58dca8ab48c258952a3ec3dc3": {
             "initialAllocation": "127530.24425417",
-            "currentBalance": "155768.05233967",
+            "currentBalance": "155934.71903967",
             "firstBonus": "8345.65671448",
             "secondBonus": "8621.20380288",
             "thirdBonus": "11270.94756814",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "166.6667"
         },
         "0x5d60834e5fb3184fcf3badce67633f31e6d5ff57": {
             "initialAllocation": "6301.26182965",
@@ -224,11 +225,12 @@
         },
         "0x0eb14f813a6bd4f8583cc8705c0d7ed5ed749c2a": {
             "initialAllocation": "113578.35962145",
-            "currentBalance": "138726.93469407",
+            "currentBalance": "139060.26799407",
             "firstBonus": "7432.63690223",
             "secondBonus": "7678.03897515",
             "thirdBonus": "10037.89919524",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x76fd046bbd7e2363a971cc1e752361d6136da01e": {
             "initialAllocation": "157728.87302839",
@@ -467,11 +469,12 @@
         },
         "0xb15f6454aec5d00a16e4081886a41b24b899b7de": {
             "initialAllocation": "59321.76656151",
-            "currentBalance": "72456.82067556",
+            "currentBalance": "72623.48737556",
             "firstBonus": "3882.05246774",
             "secondBonus": "4010.22551525",
             "thirdBonus": "5242.77613106",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "166.6667"
         },
         "0x3ac4f5b9e6036a64502de26c6841ae8eb1f2473f": {
             "initialAllocation": "3943848.58044164",
@@ -882,11 +885,12 @@
         },
         "0x4fa42651ae9574fc9d0f332b44c0448caba1adff": {
             "initialAllocation": "2573.33201893",
-            "currentBalance": "3143.12043356",
+            "currentBalance": "3476.45373356",
             "firstBonus": "168.40041175",
             "secondBonus": "173.96045869",
             "thirdBonus": "227.42754419",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x84d79eaaf3d080c70375b28b5182a940d8d17097": {
             "initialAllocation": "163249.21135647",
@@ -990,11 +994,12 @@
         },
         "0xaa2f9a01a98e173bcf3ce824c82c210ce8275e55": {
             "initialAllocation": "90876.02453808",
-            "currentBalance": "110997.83764591",
+            "currentBalance": "111331.17094591",
             "firstBonus": "5946.98229276",
             "secondBonus": "6143.33276722",
             "thirdBonus": "8031.49804785",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x18056bf0d30a295ab2aad3db205617f2cb7c8a7e": {
             "initialAllocation": "46743.11545714",
@@ -1351,11 +1356,12 @@
         },
         "0x883d899384d85e86f0a02e15115d73235b65fb4e": {
             "initialAllocation": "1001.00028571",
-            "currentBalance": "1222.64225093",
+            "currentBalance": "1555.97555093",
             "firstBonus": "65.50606724",
             "secondBonus": "67.66886961",
             "thirdBonus": "88.46702837",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xa968ed5051fc8008917c9cf7875a4d60131b36a5": {
             "initialAllocation": "594.85714286",
@@ -1881,7 +1887,7 @@
         },
         "0x8a64f2a1800b8d6b236b4da27fd699678bfd0a3a": {
             "initialAllocation": "1482.2324",
-            "currentBalance": "1810.42901167",
+            "currentBalance": "5529.96205382",
             "firstBonus": "96.99818936",
             "secondBonus": "100.20076162",
             "thirdBonus": "130.99766069",
@@ -1889,11 +1895,12 @@
         },
         "0x7a9162f606290e722c10c591458923572c9a86f3": {
             "initialAllocation": "468.735",
-            "currentBalance": "572.52252938",
+            "currentBalance": "905.85582938",
             "firstBonus": "30.67430336",
             "secondBonus": "31.68707147",
             "thirdBonus": "41.42615455",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x15b1a4bed989e7915367b9531569468f7343551d": {
             "initialAllocation": "87.06714286",
@@ -2655,11 +2662,12 @@
         },
         "0x7b2128173d70a4e5e987b86dfbadbf8cf84b7bc7": {
             "initialAllocation": "3333.04",
-            "currentBalance": "4071.04332157",
+            "currentBalance": "4404.37662157",
             "firstBonus": "218.11616388",
             "secondBonus": "225.31766712",
             "thirdBonus": "294.56949057",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x965e5a3e634ada40185c6a76b60f7b0d10dae8fa": {
             "initialAllocation": "3798.35057143",
@@ -3008,11 +3016,12 @@
         },
         "0xab07e26b5cfc8d989fb5162b5e6e374d1d115e1b": {
             "initialAllocation": "15965.636",
-            "currentBalance": "19500.75481019",
+            "currentBalance": "19834.08811019",
             "firstBonus": "1044.80092596",
             "secondBonus": "1079.29693543",
             "thirdBonus": "1411.0209488",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x5d6a4aa61bd84f4309f1bde4237bd99da3234521": {
             "initialAllocation": "11477.45971429",
@@ -3796,11 +3805,12 @@
         },
         "0x1c492c06d09afe6674d0fdb62820a0cefeb98a7e": {
             "initialAllocation": "14712.88622857",
-            "currentBalance": "17970.6205812",
+            "currentBalance": "18303.9538812",
             "firstBonus": "962.82021932",
             "secondBonus": "994.60948614",
             "thirdBonus": "1300.30464717",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x9d0de8cb6dbd08bb3541bb55886d84bf5e9076e3": {
             "initialAllocation": "14032.36571429",
@@ -4380,11 +4390,12 @@
         },
         "0xd1cefe28b6810ff98406d6a4450dfd6fca1ffd27": {
             "initialAllocation": "842.85714286",
-            "currentBalance": "1029.48297725",
+            "currentBalance": "1362.81627725",
             "firstBonus": "55.15708383",
             "secondBonus": "56.97819563",
             "thirdBonus": "74.49055493",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x238007fb44bcda489ae879962bbdb9365750fa57": {
             "initialAllocation": "815.85742857",
@@ -4497,11 +4508,12 @@
         },
         "0x801efaa08e37efeaad37bec444a50583362e31a3": {
             "initialAllocation": "19067.10685714",
-            "currentBalance": "23288.9548378",
+            "currentBalance": "23622.2881378",
             "firstBonus": "1247.76306435",
             "secondBonus": "1288.96023926",
             "thirdBonus": "1685.12467705",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x68154411c14377aab76c758cdbaac30699380907": {
             "initialAllocation": "139.20257143",
@@ -4631,11 +4643,12 @@
         },
         "0x0ad55adc930d142496f2a46358fa7306a6295763": {
             "initialAllocation": "20000",
-            "currentBalance": "24428.40962952",
+            "currentBalance": "24761.74292952",
             "firstBonus": "1308.81215876",
             "secondBonus": "1352.02498095",
             "thirdBonus": "1767.57248981",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x7888c47a8d51f7873450e6e1555cb236e0f9a84e": {
             "initialAllocation": "28542.85714286",
@@ -4931,11 +4944,12 @@
         },
         "0xd87e31e80d4fa30a80ff11f22ef562f6bcc19d94": {
             "initialAllocation": "37024.37888571",
-            "currentBalance": "45222.33468493",
+            "currentBalance": "45555.66798493",
             "firstBonus": "2422.89786281",
             "secondBonus": "2502.89425787",
             "thirdBonus": "3272.16367854",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x0dd382958b83b1d7494232d2fb0193f91f8d1564": {
             "initialAllocation": "26125.70371429",
@@ -6368,11 +6382,12 @@
         },
         "0x48ced4a4fe351a6010bd9b64c6a4821328f7aad2": {
             "initialAllocation": "1600",
-            "currentBalance": "1954.27277036",
+            "currentBalance": "2287.60607036",
             "firstBonus": "104.7049727",
             "secondBonus": "108.16199848",
             "thirdBonus": "141.40579918",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x1a580188f459f5dcf1d71de69b53e3378e6d4d74": {
             "initialAllocation": "1987.976",
@@ -6750,11 +6765,12 @@
         },
         "0xf787d8a1fc3eb7491a53efcfdce15c7d13e19984": {
             "initialAllocation": "58147.48542857",
-            "currentBalance": "71022.52964877",
+            "currentBalance": "71355.86294877",
             "firstBonus": "3805.20679651",
             "secondBonus": "3930.84264393",
             "thirdBonus": "5138.99477976",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xeae657ea79b5ff166a48d89060dea10217da16fd": {
             "initialAllocation": "2035.37228571",
@@ -6864,10 +6880,11 @@
         },
         "0x58fa1d615a46a3244db453147b3159b046671ca7": {
             "initialAllocation": "139293.096",
-            "currentBalance": "11817.90815707",
+            "currentBalance": "11984.57485707",
             "firstBonus": "9115.42488381",
             "secondBonus": "9416.38727326",
-            "isEligible": false
+            "isEligible": false,
+            "lgoExchangeRegistrationReward": "166.6667"
         },
         "0x0099bd559adac8cbd80245c64cb6ae4943ae219c": {
             "initialAllocation": "5714.28571429",
@@ -7002,11 +7019,12 @@
         },
         "0x2ad53ef7a07655894861bf5c1622d02566675759": {
             "initialAllocation": "2822.97085714",
-            "currentBalance": "3448.03442352",
+            "currentBalance": "3781.36772352",
             "firstBonus": "184.73692908",
             "secondBonus": "190.83635597",
             "thirdBonus": "249.49028133",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x5b31b0d8f41a71a408a7796f01b3103885f05282": {
             "initialAllocation": "2631.34714286",
@@ -7940,11 +7958,12 @@
         },
         "0x720bb1fa61910880dcfb5256a4b2378cd5d8f563": {
             "initialAllocation": "28571.42857143",
-            "currentBalance": "45238.07823426",
+            "currentBalance": "45571.41153426",
             "firstBonus": "1869.73165537",
             "secondBonus": "1931.46425849",
             "thirdBonus": "2525.10355687",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x174045fced3be969dffa1ca609deaf07561c2e76": {
             "initialAllocation": "57114.28571429",
@@ -8603,11 +8622,12 @@
         },
         "0x6a2d04938585fe1e3dff12fadb55e37987e609a0": {
             "initialAllocation": "12545.40942857",
-            "currentBalance": "267730.62922384",
+            "currentBalance": "268063.96252384",
             "firstBonus": "820.97921984",
             "secondBonus": "848.08534718",
             "thirdBonus": "1108.74602897",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x8a935de8b48dc2c0fe759add2ec7b4312f4bae71": {
             "initialAllocation": "10626",
@@ -8664,11 +8684,12 @@
         },
         "0x0e7c014b923e6cebfdf147497ebf69a0dbc60cd6": {
             "initialAllocation": "7404.76742857",
-            "currentBalance": "9044.33459783",
+            "currentBalance": "9377.66789783",
             "firstBonus": "484.57248217",
             "secondBonus": "500.57152708",
             "thirdBonus": "654.42316001",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x92aa4b577e17111dd13af9c3d897eadbd1a33bab": {
             "initialAllocation": "5210.85885714",
@@ -9349,11 +9370,12 @@
         },
         "0xd6456770eb1711e524858bf3cd58e1a6e55244a7": {
             "initialAllocation": "31137.3",
-            "currentBalance": "38031.73595786",
+            "currentBalance": "38365.06925786",
             "firstBonus": "2037.64384155",
             "secondBonus": "2104.92037196",
             "thirdBonus": "2751.87174435",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x9495c18e1b7e0b026f8eef3d087d9822c2b70da0": {
             "initialAllocation": "20000",
@@ -9536,11 +9558,11 @@
         },
         "0x8b03eddc8305d61b873cc106417ae5d1074b0892": {
             "initialAllocation": "17085.71428571",
-            "currentBalance": "20868.84136921",
+            "currentBalance": "868.84136921",
             "firstBonus": "1118.09952991",
             "secondBonus": "1155.01562658",
             "thirdBonus": "1510.01192701",
-            "isEligible": true
+            "isEligible": false
         },
         "0x00138888221a216e5c865986a6e421ef6def30ea": {
             "initialAllocation": "28571.42857143",
@@ -9871,11 +9893,12 @@
         },
         "0xc9e2dcd5821d4b00642bf85e78b0be683b0a8310": {
             "initialAllocation": "714.28571429",
-            "currentBalance": "872.44320105",
+            "currentBalance": "1205.77650105",
             "firstBonus": "46.74329138",
             "secondBonus": "48.28660646",
             "thirdBonus": "63.12758892",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xcf1a0cf865af1859da476d9573dd834febe9fb95": {
             "initialAllocation": "75000.00002857",
@@ -10323,11 +10346,12 @@
         },
         "0xe82dc3bae1a2347a4b780a43842064ddc7c9095a": {
             "initialAllocation": "661.06171429",
-            "currentBalance": "807.43431735",
+            "currentBalance": "1140.76761735",
             "firstBonus": "43.26028047",
             "secondBonus": "44.68859758",
             "thirdBonus": "58.42372501",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x5046a67365fb5531c09a4a427c5560a00841f301": {
             "initialAllocation": "937.61914286",
@@ -10864,11 +10888,12 @@
         },
         "0xbc99e61d5d9f1eb5fc566cd918063c4c94a673a4": {
             "initialAllocation": "1917.69971429",
-            "currentBalance": "3589.43601853",
+            "currentBalance": "3922.76931853",
             "firstBonus": "125.49543515",
             "secondBonus": "129.63889598",
             "thirdBonus": "169.48366293",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x89e1250740de2f01a19ec2f98857295c0b100f7b": {
             "initialAllocation": "1224.24571429",
@@ -11086,10 +11111,11 @@
         },
         "0xb121a81c9f9a067947561ed0a469aba424747835": {
             "initialAllocation": "553.92285714",
-            "currentBalance": "0",
+            "currentBalance": "333.3333",
             "firstBonus": "36.24904852",
             "secondBonus": "37.44587702",
-            "isEligible": false
+            "isEligible": false,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x9633d482c269d8f9e2a9e342ee0b38f45fbc1f44": {
             "initialAllocation": "285.71428571",
@@ -11218,8 +11244,9 @@
         },
         "0x1e5745bdf61e07ee8d5ae770728cd404d1bda47c": {
             "initialAllocation": "54503.31628571",
-            "currentBalance": "25259.49628571",
-            "isEligible": false
+            "currentBalance": "25592.82958571",
+            "isEligible": false,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xc2050ec9c495278426f47a2d8f4334e9f59e31e1": {
             "initialAllocation": "6914.28571429",
@@ -12160,11 +12187,12 @@
         },
         "0x9af99dc2e73005e1ce1b90f56574372eeaa1bde3": {
             "initialAllocation": "10267.4",
-            "currentBalance": "32977.5689111",
+            "currentBalance": "33310.9022111",
             "firstBonus": "671.90489794",
             "secondBonus": "694.08906447",
             "thirdBonus": "907.41868909",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x2dbe1a35ae807c3c5da354ac2c154f76cbea4a45": {
             "initialAllocation": "14908.57114286",
@@ -12199,11 +12227,12 @@
         },
         "0xe371c25dbe504243e8afe279c34e5cfb17275d42": {
             "initialAllocation": "4987.33971429",
-            "currentBalance": "6091.63887512",
+            "currentBalance": "6424.97217512",
             "firstBonus": "326.3745429",
             "secondBonus": "337.15039411",
             "thirdBonus": "440.77422382",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xf1a84bafbf05d8752a5f8b50fb3086cc5236a29e": {
             "initialAllocation": "2828.57142857",
@@ -13220,11 +13249,12 @@
         },
         "0xe9b15364d2a992c33c33e98685398c4ffc821400": {
             "initialAllocation": "285.71428571",
-            "currentBalance": "348.97728041",
+            "currentBalance": "682.31058041",
             "firstBonus": "18.69731655",
             "secondBonus": "19.31464258",
             "thirdBonus": "25.25103557",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x7b0a00ac55f7b89423c7c15baf00bb8c02143868": {
             "initialAllocation": "3142.85714286",
@@ -14042,11 +14072,12 @@
         },
         "0xd8d1e4467a06c0fd9ecd0bf7d1fcb0429d0a8465": {
             "initialAllocation": "764.28571429",
-            "currentBalance": "933.51422513",
+            "currentBalance": "1266.84752513",
             "firstBonus": "50.01532178",
             "secondBonus": "51.66666891",
             "thirdBonus": "67.54652015",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xd256f0c2111c0f11f98e6477a912dd7de63c3827": {
             "initialAllocation": "600.97714286",
@@ -14286,11 +14317,12 @@
         },
         "0x9009ebb15b2865e90200e84bbebd8c8e01364fc5": {
             "initialAllocation": "13279.76568571",
-            "currentBalance": "93593.87901838",
+            "currentBalance": "93927.21231838",
             "firstBonus": "869.03593975",
             "secondBonus": "897.72874741",
             "thirdBonus": "1173.64742486",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x4cfa699779c4798528a8d638cd8cbc98f80360db": {
             "initialAllocation": "8545.66828571",
@@ -14925,11 +14957,12 @@
         },
         "0x983bde31a84552ba2ce301ded37d0899a1c3607e": {
             "initialAllocation": "28571.42857143",
-            "currentBalance": "34897.72804216",
+            "currentBalance": "35231.06134216",
             "firstBonus": "1869.73165537",
             "secondBonus": "1931.46425849",
             "thirdBonus": "2525.10355687",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x37c9909dfb1f13281cc0109f5c4f4775a337df7c": {
             "initialAllocation": "2858.686",
@@ -15386,11 +15419,12 @@
         },
         "0x2dd9b29cbc2796434ad0680aadba3aa32899f8d2": {
             "initialAllocation": "13533.69271429",
-            "currentBalance": "20023.32950074",
+            "currentBalance": "20356.66280074",
             "firstBonus": "885.65307887",
             "secondBonus": "914.89453171",
             "thirdBonus": "1196.08914637",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xe09eb363b20e7b96b3d7f4e79bc286082cc531b7": {
             "initialAllocation": "12000",
@@ -17253,11 +17287,12 @@
         },
         "0x02326d11195a34b6f96bd948ab8b64873a2f8e41": {
             "initialAllocation": "1098.0956",
-            "currentBalance": "1341.23645646",
+            "currentBalance": "1674.56975646",
             "firstBonus": "71.86004364",
             "secondBonus": "74.23263413",
             "thirdBonus": "97.04817869",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x69bea3036b548c3b96acc43b0daf77e4c2fe4d67": {
             "initialAllocation": "1200",
@@ -17322,11 +17357,12 @@
         },
         "0xbc7d63eb218e660aca79fa13debe00a98381d0df": {
             "initialAllocation": "301.8954",
-            "currentBalance": "368.74122482",
+            "currentBalance": "702.07452482",
             "firstBonus": "19.75621851",
             "secondBonus": "20.40850612",
             "thirdBonus": "26.68110019",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xa243cfa2236c50346604648522cfeaaafef757c9": {
             "initialAllocation": "79691.4958",
@@ -18894,11 +18930,12 @@
         },
         "0xebfaa8a9caabebc93a1eef9006b0ff440d450d75": {
             "initialAllocation": "6000",
-            "currentBalance": "7328.52288885",
+            "currentBalance": "7661.85618885",
             "firstBonus": "392.64364763",
             "secondBonus": "405.60749428",
             "thirdBonus": "530.27174694",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xcc8ae65ea895a2b1d081c4131bea43d3c7e12b57": {
             "initialAllocation": "5580",
@@ -19381,10 +19418,11 @@
         },
         "0x8ea8385d0cbf2aa4c7bb7c38817a1c7bcd4c592a": {
             "initialAllocation": "11305.901",
-            "currentBalance": "0",
+            "currentBalance": "333.3333",
             "firstBonus": "739.86503473",
             "secondBonus": "764.2930292",
-            "isEligible": false
+            "isEligible": false,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xe0cffb10260010723a8db3402f3951d062f99ecc": {
             "initialAllocation": "9980",
@@ -21031,11 +21069,12 @@
         },
         "0x162c22f5160556d2c6ecd1e55527b8004c783c34": {
             "initialAllocation": "100",
-            "currentBalance": "122.14204814",
+            "currentBalance": "288.80874814",
             "firstBonus": "6.54406079",
             "secondBonus": "6.7601249",
             "thirdBonus": "8.83786245",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "166.6667"
         },
         "0xa80c7be4f4f615af9df0a5f3f94cc9b5ad077617": {
             "initialAllocation": "283.5682",
@@ -21472,11 +21511,12 @@
         },
         "0x25a620685c38e076fc2b9445e049ff8c8d2d18df": {
             "initialAllocation": "743.474",
-            "currentBalance": "908.09437104",
+            "currentBalance": "1241.42767104",
             "firstBonus": "48.65339055",
             "secondBonus": "50.25977103",
             "thirdBonus": "65.70720946",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xa9e1281f420e8d0ebafe3eb721824b65b13393d8": {
             "initialAllocation": "636.3468",
@@ -21572,11 +21612,12 @@
         },
         "0x441c9009212d914eaa5f885582947c193635a5d5": {
             "initialAllocation": "23664.622",
-            "currentBalance": "28904.45399718",
+            "currentBalance": "29237.78729718",
             "firstBonus": "1548.6272503",
             "secondBonus": "1599.75800543",
             "thirdBonus": "2091.44674145",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xc8246a99601da0652332bfe2e575e6f11e6964f5": {
             "initialAllocation": "100",
@@ -21735,11 +21776,12 @@
         },
         "0x582543421ac4ab06761c44fb3c3ef6490c196777": {
             "initialAllocation": "1903.9794",
-            "currentBalance": "2325.55943547",
+            "currentBalance": "2658.89273547",
             "firstBonus": "124.59756944",
             "secondBonus": "128.7113856",
             "thirdBonus": "168.27108043",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xac448eadb1ad477191f2d7c5cb7ba094c8770439": {
             "initialAllocation": "1361.2",
@@ -22371,7 +22413,7 @@
         },
         "0xba7e03cfa4cbbe34fa3ab74b34f9a6cb36fdcf93": {
             "initialAllocation": "31347.1608",
-            "currentBalance": "16503.6832",
+            "currentBalance": "0",
             "isEligible": false
         },
         "0x74aa0d7d107ae07eb16961c0922f224088fe322f": {
@@ -22705,11 +22747,11 @@
         },
         "0xce055fd7089d3af38952f4248a8e31b06b2902d6": {
             "initialAllocation": "29980",
-            "currentBalance": "36618.18603465",
+            "currentBalance": "0",
             "firstBonus": "1961.90942598",
             "secondBonus": "2026.68544644",
             "thirdBonus": "2649.59116223",
-            "isEligible": true
+            "isEligible": false
         },
         "0x7ab4f4d8f47846902511b76bad42e14d6f3ded1d": {
             "initialAllocation": "7929.2416",
@@ -22742,11 +22784,12 @@
         },
         "0x59b23033d4ccc6beb4b377becf55ebe540c5e797": {
             "initialAllocation": "1756.0142",
-            "currentBalance": "2144.83170964",
+            "currentBalance": "2478.16500964",
             "firstBonus": "114.9146368",
             "secondBonus": "118.70875326",
             "thirdBonus": "155.19411958",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xd2b2765b2fb32cc85c8820a4cc7b130148df4ff0": {
             "initialAllocation": "949.866",
@@ -22889,11 +22932,12 @@
         },
         "0xdbcc59184df6766e67e3bcf38b9d61ca01995010": {
             "initialAllocation": "1200",
-            "currentBalance": "1465.70457778",
+            "currentBalance": "1799.03787778",
             "firstBonus": "78.52872953",
             "secondBonus": "81.12149886",
             "thirdBonus": "106.05434939",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xc15b4b1d033988c210c65e3a61fcef1b408ef166": {
             "initialAllocation": "1200",
@@ -23386,11 +23430,12 @@
         },
         "0x00b591bc2b682a0b30dd72bac9406bfa13e5d3cd": {
             "initialAllocation": "5255.471",
-            "currentBalance": "0",
+            "currentBalance": "333.3333",
             "firstBonus": "343.92121724",
             "secondBonus": "355.27640393",
             "thirdBonus": "464.47129803",
-            "isEligible": false
+            "isEligible": false,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x36ba5fc71ab28333c35a9fc8117c6111afa7ec44": {
             "initialAllocation": "4165.5816",
@@ -23746,11 +23791,11 @@
         },
         "0xd5842c6f8c74278535066e3cc14f0e3b18118feb": {
             "initialAllocation": "17000",
-            "currentBalance": "20764.14818509",
+            "currentBalance": "0",
             "firstBonus": "1112.49033495",
             "secondBonus": "1149.2212338",
             "thirdBonus": "1502.43661634",
-            "isEligible": true
+            "isEligible": false
         },
         "0x48b609e8ed54939e19560dd5e5fbb0846306aead": {
             "initialAllocation": "4001.1128",
@@ -24322,11 +24367,11 @@
         },
         "0xe9688508037df7c4e1386dea90a114846a8d623a": {
             "initialAllocation": "1896.8646",
-            "currentBalance": "2316.86927302",
+            "currentBalance": "0",
             "firstBonus": "124.1319726",
             "secondBonus": "128.23041623",
             "thirdBonus": "167.64228419",
-            "isEligible": true
+            "isEligible": false
         },
         "0x77b621b0997f0acd3e400be0c91daea708cf9abd": {
             "initialAllocation": "1516.1734",
@@ -25866,11 +25911,11 @@
         },
         "0xf1cef93364f69b2583849922d72eb470476c85c0": {
             "initialAllocation": "1615.8254",
-            "currentBalance": "1973.60223805",
+            "currentBalance": "0",
             "firstBonus": "105.7405965",
             "secondBonus": "109.23181528",
             "thirdBonus": "142.80442627",
-            "isEligible": true
+            "isEligible": false
         },
         "0x10fd60543a4cf710f751b605df5732ddbc0a289b": {
             "initialAllocation": "1034.007",
@@ -27416,7 +27461,7 @@
         },
         "0xace8eb58a66613caa445cad0ebec4ab9d5be32f7": {
             "initialAllocation": "4374",
-            "currentBalance": "47334.95298263",
+            "currentBalance": "62697.29914803",
             "firstBonus": "286.23721912",
             "secondBonus": "295.68786333",
             "thirdBonus": "386.56810352",
@@ -28001,11 +28046,12 @@
         },
         "0x764022abf1118be127ec2f5d77ee0a6822f25534": {
             "initialAllocation": "9205.0934",
-            "currentBalance": "11243.28961266",
+            "currentBalance": "11576.62291266",
             "firstBonus": "602.38690822",
             "secondBonus": "622.27581144",
             "thirdBonus": "813.533493",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xa1ddb0c6acbbf3fd4e0d483ef2acba6923e47726": {
             "initialAllocation": "8188.7024",
@@ -28437,11 +28483,12 @@
         },
         "0xb4cfa4987da73ef2fa4205412e772f492d8f1ef3": {
             "initialAllocation": "1153.6",
-            "currentBalance": "1409.03066743",
+            "currentBalance": "1742.36396743",
             "firstBonus": "75.49228532",
             "secondBonus": "77.9848009",
             "thirdBonus": "101.95358121",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xaf08c523b1df5aa736ec46891b741ac97db9c547": {
             "initialAllocation": "1000",
@@ -28466,11 +28513,12 @@
         },
         "0xf00d5124b0bac8918ef4349746e6671520c2d35c": {
             "initialAllocation": "814.619",
-            "currentBalance": "994.9923312",
+            "currentBalance": "1328.3256312",
             "firstBonus": "53.3091626",
             "secondBonus": "55.0692619",
             "thirdBonus": "71.9949067",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x3c3751a395ec19ecd6d86ed15ecaadc0aa24e72c": {
             "initialAllocation": "768.9186",
@@ -29058,11 +29106,12 @@
         },
         "0x0adfbde372da171b9c5abdb13d9985a1ab4edc5f": {
             "initialAllocation": "474.3968",
-            "currentBalance": "579.43796787",
+            "currentBalance": "912.77126787",
             "firstBonus": "31.044815",
             "secondBonus": "32.06981622",
             "thirdBonus": "41.92653665",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x64435ffb5554341b9f25d4e638659a461a2616a7": {
             "initialAllocation": "220",
@@ -30151,11 +30200,12 @@
         },
         "0x79a2fcd7de90bda38f6c89ea5e5c21db3266561e": {
             "initialAllocation": "489.8",
-            "currentBalance": "598.25175183",
+            "currentBalance": "931.58505183",
             "firstBonus": "32.05280977",
             "secondBonus": "33.11109178",
             "thirdBonus": "43.28785028",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xcdba3e624035568e76071e9ced0224ff66f5a10e": {
             "initialAllocation": "423.563",
@@ -31201,10 +31251,11 @@
         },
         "0xa5efabafb22f3824613e1fd415a5533efbea2058": {
             "initialAllocation": "1831.0336",
-            "currentBalance": "0",
+            "currentBalance": "333.3333",
             "firstBonus": "119.82395194",
             "secondBonus": "123.78015841",
-            "isEligible": false
+            "isEligible": false,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x8616ff37e9b8c8d6ca47b0d77355e61a3863fc2c": {
             "initialAllocation": "1610.9332",
@@ -31303,11 +31354,12 @@
         },
         "0xca01fc60c9a1f7f9b8fdf998682156e610d821e0": {
             "initialAllocation": "1980.0018",
-            "currentBalance": "2418.41475188",
+            "currentBalance": "2751.74805188",
             "firstBonus": "129.57252151",
             "secondBonus": "133.8505948",
             "thirdBonus": "174.98983557",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x96ab06d446496072476e5528a5d2915bb8a2f0df": {
             "initialAllocation": "1600",
@@ -34138,11 +34190,11 @@
         },
         "0xaae78f8fa7b3c0376552be90ad8ea031aa306125": {
             "initialAllocation": "1240.538",
-            "currentBalance": "1515.21852125",
+            "currentBalance": "0",
             "firstBonus": "81.18156089",
             "secondBonus": "83.86191829",
             "thirdBonus": "109.63704207",
-            "isEligible": true
+            "isEligible": false
         },
         "0x6317794e1a40d76c258489d259175710ba3e08a7": {
             "initialAllocation": "1390.6624",
@@ -35196,11 +35248,12 @@
         },
         "0x62d9a951ca04a9897e7e6aca702969b473ba648d": {
             "initialAllocation": "3204.4422",
-            "currentBalance": "3913.97133479",
+            "currentBalance": "4247.30463479",
             "firstBonus": "209.70064567",
             "secondBonus": "216.62429522",
             "thirdBonus": "283.2041939",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xd0a41fd1107e36a55d148916769b9f50b19c326c": {
             "initialAllocation": "1950.3214",
@@ -36981,11 +37034,12 @@
         },
         "0x042436ca9d7b082b27c98ca397753296c39356ea": {
             "initialAllocation": "550.623",
-            "currentBalance": "672.54220976",
+            "currentBalance": "1005.87550976",
             "firstBonus": "36.03310386",
             "secondBonus": "37.22280255",
             "thirdBonus": "48.66330335",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xa6b5b714c4c4de02b4141387f65841640e1c36d0": {
             "initialAllocation": "460",
@@ -37209,11 +37263,11 @@
         },
         "0xcbac9de6723b5a0fb22f2326c11be1c79b947b3f": {
             "initialAllocation": "48238.8564",
-            "currentBalance": "58919.92720993",
+            "currentBalance": "0",
             "firstBonus": "3156.78008905",
             "secondBonus": "3261.00694525",
             "thirdBonus": "4263.28377563",
-            "isEligible": true
+            "isEligible": false
         },
         "0x5929157a7b7109052a636332f66cae8b2ada2b72": {
             "initialAllocation": "2192.8",
@@ -39316,19 +39370,21 @@
         },
         "0x7adf544d97e04899cbe19c94473efe2f8b8a9421": {
             "initialAllocation": "6015.018",
-            "currentBalance": "79224.57080411",
+            "currentBalance": "79557.90410411",
             "firstBonus": "393.62643468",
             "secondBonus": "406.62272984",
             "thirdBonus": "531.59901713",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x0b74f07528dd66e356bcb7626a07ab4cb2728d2b": {
             "initialAllocation": "787.1096",
-            "currentBalance": "961.39178661",
+            "currentBalance": "1294.72508661",
             "firstBonus": "51.50893074",
             "secondBonus": "53.2095921",
             "thirdBonus": "69.56366377",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xbef93bad20c2c3881dea7074e0eca7efe86ac3e0": {
             "initialAllocation": "2882.0156",
@@ -40206,11 +40262,12 @@
         },
         "0xc510ac390dea3a178fb4d333189ba7f74e3a6a0c": {
             "initialAllocation": "124.448",
-            "currentBalance": "152.00333608",
+            "currentBalance": "318.67003608",
             "firstBonus": "8.14395278",
             "secondBonus": "8.41284024",
             "thirdBonus": "10.99854306",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "166.6667"
         },
         "0x2fef9f32b1a136948672716a465a555e9dcb6a7e": {
             "initialAllocation": "37.6878",
@@ -40400,11 +40457,12 @@
         },
         "0xd81f3a7f6d6eebcafec979a0b8b31e4f2f8e718a": {
             "initialAllocation": "1000",
-            "currentBalance": "1221.42048148",
+            "currentBalance": "1554.75378148",
             "firstBonus": "65.44060794",
             "secondBonus": "67.60124905",
             "thirdBonus": "88.37862449",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x5b8b17f20e2b0b9cd3fa5c5f02fbdfcd0e2fa980": {
             "initialAllocation": "1853.8358",
@@ -40831,11 +40889,11 @@
         },
         "0x27152c7e2f9ae2668eca601c49c8012e2dd2f569": {
             "initialAllocation": "4000",
-            "currentBalance": "4885.6819259",
+            "currentBalance": "0",
             "firstBonus": "261.76243175",
             "secondBonus": "270.40499619",
             "thirdBonus": "353.51449796",
-            "isEligible": true
+            "isEligible": false
         },
         "0xbcb8ba8a30053ff14d99d27538b50a37650e960a": {
             "initialAllocation": "2788.37",
@@ -41874,11 +41932,12 @@
         },
         "0x350b85f8b7d4924c88b90cdac534ff4931512ab3": {
             "initialAllocation": "40000",
-            "currentBalance": "48856.81925903",
+            "currentBalance": "49190.15255903",
             "firstBonus": "2617.62431752",
             "secondBonus": "2704.04996189",
             "thirdBonus": "3535.14497962",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x49a913a97faa4bf879e8be542e1c23961e1cdfc3": {
             "initialAllocation": "20000",
@@ -42088,11 +42147,11 @@
         },
         "0xf47e2dd57f5ef0a68c2a01547878dc8cd5e8e83e": {
             "initialAllocation": "4817.5128",
-            "currentBalance": "5884.20880369",
+            "currentBalance": "0",
             "firstBonus": "315.26096638",
             "secondBonus": "325.66988258",
             "thirdBonus": "425.76515473",
-            "isEligible": true
+            "isEligible": false
         },
         "0xf0b12eba176156e53c0d83d2304c16048356e271": {
             "initialAllocation": "3662.575",
@@ -42319,11 +42378,12 @@
         },
         "0x7ab35bf9f0b6c17107958328ed0219460b42373a": {
             "initialAllocation": "133.26",
-            "currentBalance": "2005.06721142",
+            "currentBalance": "2338.40051142",
             "firstBonus": "8.72061541",
             "secondBonus": "9.00854245",
             "thirdBonus": "11.7773355",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x2401cf431f3e06800e0334ddaaf45d19af493aea": {
             "initialAllocation": "16.6",
@@ -42603,11 +42663,12 @@
         },
         "0xdbe618cb8b8cad5a93b04ac7a803fcad8b182848": {
             "initialAllocation": "4500",
-            "currentBalance": "5496.39216664",
+            "currentBalance": "5829.72546664",
             "firstBonus": "294.48273572",
             "secondBonus": "304.20562071",
             "thirdBonus": "397.70381021",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x5f6c066e024412e4cb4c367e9acea05c13cc397e": {
             "initialAllocation": "3400",
@@ -43172,11 +43233,12 @@
         },
         "0xb918003d23d19e0cf30c02b101cb149f4aa4d74a": {
             "initialAllocation": "751.4154",
-            "currentBalance": "917.79415965",
+            "currentBalance": "1084.46085965",
             "firstBonus": "49.17308059",
             "secondBonus": "50.79661959",
             "thirdBonus": "66.40905947",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "166.6667"
         },
         "0xe60d013d816b56ecf01a6cdcb801b7ae0ab7f443": {
             "initialAllocation": "25518.3088",
@@ -43324,11 +43386,12 @@
         },
         "0x51b892f19201ff9cc4af624f672e888cb9844ed4": {
             "initialAllocation": "223.568",
-            "currentBalance": "273.07053421",
+            "currentBalance": "606.40383421",
             "firstBonus": "14.63042584",
             "secondBonus": "15.11347605",
             "thirdBonus": "19.75863232",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x575a97480740a6b7f82757c64e575ceb89132509": {
             "initialAllocation": "31.6",
@@ -43488,11 +43551,12 @@
         },
         "0xd400a57954339821c0a31b2d05cc4edfc0e02d6b": {
             "initialAllocation": "580",
-            "currentBalance": "708.42387925",
+            "currentBalance": "875.09057925",
             "firstBonus": "37.9555526",
             "secondBonus": "39.20872445",
             "thirdBonus": "51.2596022",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "166.6667"
         },
         "0xad3dd957d5e050c9539740e9d06348de6b1e101a": {
             "initialAllocation": "292.2192",
@@ -43762,11 +43826,11 @@
         },
         "0x8a59236b37183a3165e14db803273349b6a1e158": {
             "initialAllocation": "10000",
-            "currentBalance": "12214.20481476",
+            "currentBalance": "0",
             "firstBonus": "654.40607938",
             "secondBonus": "676.01249047",
             "thirdBonus": "883.78624491",
-            "isEligible": true
+            "isEligible": false
         },
         "0x2b0c588e474b9fd4f7e787d9ecc6cb4daa8ee3ef": {
             "initialAllocation": "4000",
@@ -44973,8 +45037,9 @@
         },
         "0xb8a670ae62c10363523402e29848477d60dc5388": {
             "initialAllocation": "927.3948",
-            "currentBalance": "0",
-            "isEligible": false
+            "currentBalance": "333.3333",
+            "isEligible": false,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x2fb72b55e25eca21b4e3a84738f1231f7ead3a97": {
             "initialAllocation": "978.557",
@@ -46364,11 +46429,12 @@
         },
         "0x796dea45dc1b5f6bb526ea08bd76cf1e34afffcd": {
             "initialAllocation": "54.0834",
-            "currentBalance": "66.05857247",
+            "currentBalance": "399.39187247",
             "firstBonus": "3.53925058",
             "secondBonus": "3.65610539",
             "thirdBonus": "4.7798165",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x9c6d9770a9d98127093ab2ded34928a835c1de7f": {
             "initialAllocation": "922.74",
@@ -46486,7 +46552,7 @@
         },
         "0xc603abc77149a84f18b54e7a28cc300d7bb2bb07": {
             "initialAllocation": "8446.082",
-            "currentBalance": "10316.21754302",
+            "currentBalance": "75940.38718692",
             "firstBonus": "552.71674077",
             "secondBonus": "570.96569276",
             "thirdBonus": "746.45310949",
@@ -46494,11 +46560,11 @@
         },
         "0x0b102bf6947be4e50c090c30d5855184f66bf63e": {
             "initialAllocation": "6723.797",
-            "currentBalance": "8212.58336908",
+            "currentBalance": "8000",
             "firstBonus": "440.00936333",
             "secondBonus": "454.53707554",
             "thirdBonus": "594.23993021",
-            "isEligible": true
+            "isEligible": false
         },
         "0xe0b6649324a81fd05bbe1762bab347c795a60382": {
             "initialAllocation": "5897.2526",
@@ -47078,11 +47144,11 @@
         },
         "0x051ec0ba4f129e13199caa217536b993ee8dcb69": {
             "initialAllocation": "250",
-            "currentBalance": "305.35512036",
+            "currentBalance": "0",
             "firstBonus": "16.36015198",
             "secondBonus": "16.90031226",
             "thirdBonus": "22.09465612",
-            "isEligible": true
+            "isEligible": false
         },
         "0x75bb2c2d22ffbf3dfec794b097c177eea8be4c43": {
             "initialAllocation": "207.762",
@@ -47313,11 +47379,11 @@
         },
         "0x7f96243fb705d5d5e018a680ade1013995992e2c": {
             "initialAllocation": "781.3068",
-            "currentBalance": "954.30412784",
+            "currentBalance": "0",
             "firstBonus": "51.12919198",
             "secondBonus": "52.81731557",
             "thirdBonus": "69.05082029",
-            "isEligible": true
+            "isEligible": false
         },
         "0x0809e5766f018c17c9065b9af443af224e7fab1b": {
             "initialAllocation": "852.1486",
@@ -47493,11 +47559,11 @@
         },
         "0x59eefedaced2f8ce52a4546a0d34aab6b5194d44": {
             "initialAllocation": "400",
-            "currentBalance": "488.5681926",
+            "currentBalance": "0",
             "firstBonus": "26.17624318",
             "secondBonus": "27.04049962",
             "thirdBonus": "35.3514498",
-            "isEligible": true
+            "isEligible": false
         },
         "0xbb91239340fa13451b01f7f3c97ff9362b269db1": {
             "initialAllocation": "87486.2556",
@@ -47796,11 +47862,12 @@
         },
         "0xe367a883a7b3df50003bbc71ffbb28ba15e2a1f0": {
             "initialAllocation": "300",
-            "currentBalance": "366.42614444",
+            "currentBalance": "533.09284444",
             "firstBonus": "19.63218238",
             "secondBonus": "20.28037471",
             "thirdBonus": "26.51358735",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "166.6667"
         },
         "0xef505541f47638e844cd5a6de515678046311eda": {
             "initialAllocation": "200",
@@ -48980,11 +49047,12 @@
         },
         "0xe1fec401d49c9aea708a9cba71572c9ff982917d": {
             "initialAllocation": "700",
-            "currentBalance": "854.99433703",
+            "currentBalance": "1188.32763703",
             "firstBonus": "45.80842556",
             "secondBonus": "47.32087433",
             "thirdBonus": "61.86503714",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x3960bc2fbee188663f4b880f0129c48c69b95455": {
             "initialAllocation": "592.3",
@@ -49043,11 +49111,11 @@
         },
         "0xc38e77d03c065b14b5af10fd4b5c02a5a6c12551": {
             "initialAllocation": "8491.7274",
-            "currentBalance": "10371.96976947",
+            "currentBalance": "0",
             "firstBonus": "555.7038035",
             "secondBonus": "574.05137881",
             "thirdBonus": "750.48718716",
-            "isEligible": true
+            "isEligible": false
         },
         "0xff6e18566c66855719595d1dafe706e238c32e5a": {
             "initialAllocation": "6409.0104",
@@ -49913,11 +49981,11 @@
         },
         "0xeb20d0edeaa88c737ddde8e691ed9c59f61b3427": {
             "initialAllocation": "40000",
-            "currentBalance": "48856.81925903",
+            "currentBalance": "0",
             "firstBonus": "2617.62431752",
             "secondBonus": "2704.04996189",
             "thirdBonus": "3535.14497962",
-            "isEligible": true
+            "isEligible": false
         },
         "0x8143dc17c58391c5f6ede66cf2dfc228f6ffb499": {
             "initialAllocation": "40000",
@@ -50840,9 +50908,10 @@
         },
         "0x18982b1807e91af9072f0c2949691f2708ad63c8": {
             "initialAllocation": "4000",
-            "currentBalance": "3000",
+            "currentBalance": "3166.6667",
             "firstBonus": "261.76243175",
-            "isEligible": false
+            "isEligible": false,
+            "lgoExchangeRegistrationReward": "166.6667"
         },
         "0x7898e7721b72e2fed4a01aee7dda9f37f8b19b46": {
             "initialAllocation": "938",
@@ -50907,11 +50976,12 @@
         },
         "0x1da1b0b370291399964b7d01d2f0c9ab8eac5c95": {
             "initialAllocation": "40000",
-            "currentBalance": "48856.81925903",
+            "currentBalance": "49190.15255903",
             "firstBonus": "2617.62431752",
             "secondBonus": "2704.04996189",
             "thirdBonus": "3535.14497962",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x853d16bb76c520c9cdba8487b994e2f67c6e735b": {
             "initialAllocation": "8462.9982",
@@ -51013,11 +51083,12 @@
         },
         "0xd7cb2e9ca30d8af5740f583120b2e645f1c8c879": {
             "initialAllocation": "291.56",
-            "currentBalance": "1961.95050248",
+            "currentBalance": "2295.28380248",
             "firstBonus": "19.07986365",
             "secondBonus": "19.70982017",
             "thirdBonus": "25.76767176",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xc78da4924ec66a5c8563f4f7fc51f3fa14b35299": {
             "initialAllocation": "200",
@@ -54185,11 +54256,12 @@
         },
         "0xe0061ff854c4d128ad3e0b9b4b838c04fce11cdc": {
             "initialAllocation": "2490.998",
-            "currentBalance": "3042.55597651",
+            "currentBalance": "3375.88927651",
             "firstBonus": "163.01242349",
             "secondBonus": "168.39457617",
             "thirdBonus": "220.15097685",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x2540bf2803a53b48a637573c54e396c97a79de2e": {
             "initialAllocation": "1380",
@@ -54413,11 +54485,12 @@
         },
         "0x1eb7510cc63bd5021da831382d1896ea21e65886": {
             "initialAllocation": "3149.2174",
-            "currentBalance": "196064.74300318",
+            "currentBalance": "196398.07630318",
             "firstBonus": "206.08670118",
             "secondBonus": "212.89102976",
             "thirdBonus": "278.32350203",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x875eee375a0af2887cb9718d86686baef27510e4": {
             "initialAllocation": "2800",
@@ -55336,11 +55409,12 @@
         },
         "0xcb4998e978530940be0dd8d0f779c7d24564d24b": {
             "initialAllocation": "28571.42857143",
-            "currentBalance": "34897.72804216",
+            "currentBalance": "35064.39474216",
             "firstBonus": "1869.73165537",
             "secondBonus": "1931.46425849",
             "thirdBonus": "2525.10355687",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "166.6667"
         },
         "0x3aa8810d5f20215075642a0493f9ed2210b44108": {
             "initialAllocation": "78864.3533123",
@@ -56028,11 +56102,12 @@
         },
         "0x9cbbef814bdc979bb116a65be0ddb1d5af679625": {
             "initialAllocation": "7182.85714286",
-            "currentBalance": "8773.28882981",
+            "currentBalance": "9106.62212981",
             "firstBonus": "470.05053816",
             "secondBonus": "485.57011459",
             "thirdBonus": "634.8110342",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xe64b0c79bb8134a50c7a7bc03662685b795248a4": {
             "initialAllocation": "5020",
@@ -56133,10 +56208,11 @@
         },
         "0x0cc7d4edeb816736fb97a263b7233848924c499c": {
             "initialAllocation": "827.8956",
-            "currentBalance": "0.04036801",
+            "currentBalance": "333.37366801",
             "firstBonus": "54.17799137",
             "secondBonus": "55.96677664",
-            "isEligible": false
+            "isEligible": false,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x87fbb597fa6eff8dc4b08e5f7067fa76cde5886e": {
             "initialAllocation": "4000",
@@ -56354,11 +56430,11 @@
         },
         "0xc237081a00bd5e38c560f946778773cc6ce63e6e": {
             "initialAllocation": "2024.4182",
-            "currentBalance": "2472.66585255",
+            "currentBalance": "0",
             "firstBonus": "132.47915773",
             "secondBonus": "136.85319891",
             "thirdBonus": "178.91529591",
-            "isEligible": true
+            "isEligible": false
         },
         "0xedff09545b3cf13e3c18e29b823b96c2ae3d4d1c": {
             "initialAllocation": "2017.7138",
@@ -57512,11 +57588,12 @@
         },
         "0x7dbc0f6204a850701ad8d9738bd05e2ce5fbfe84": {
             "initialAllocation": "20133.11485714",
-            "currentBalance": "24590.99884242",
+            "currentBalance": "24924.33214242",
             "firstBonus": "1317.52327594",
             "secondBonus": "1361.02371155",
             "thirdBonus": "1779.33699779",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xf9d6d69399f216f0609a1c56566d76f4ae8ce141": {
             "initialAllocation": "14000",
@@ -58891,9 +58968,10 @@
         },
         "0xe073362dc05d6c782bf5a79b6b2e3e9774ab8a18": {
             "initialAllocation": "12823.124",
-            "currentBalance": "0",
+            "currentBalance": "166.6667",
             "firstBonus": "839.15303022",
-            "isEligible": false
+            "isEligible": false,
+            "lgoExchangeRegistrationReward": "166.6667"
         },
         "0x1fafe75ebe6f09ee56f55ca7df52fda0663b9938": {
             "initialAllocation": "12740",
@@ -58930,11 +59008,11 @@
         },
         "0x69662921fa0390d85d457c706e05bfcf333e050b": {
             "initialAllocation": "9900",
-            "currentBalance": "12092.06276662",
+            "currentBalance": "0",
             "firstBonus": "647.86201859",
             "secondBonus": "669.25236557",
             "thirdBonus": "874.94838246",
-            "isEligible": true
+            "isEligible": false
         },
         "0xd5be5be86d6bf9da6aede89c9e81347be846bd3a": {
             "initialAllocation": "14228.57142857",
@@ -59108,11 +59186,12 @@
         },
         "0x0ae479230e592aeaf8967e8612d41dea53d6c9e6": {
             "initialAllocation": "5005.6",
-            "currentBalance": "6113.94236207",
+            "currentBalance": "6447.27566207",
             "firstBonus": "327.56950709",
             "secondBonus": "338.38481223",
             "thirdBonus": "442.38804275",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x1d4ca6c5a6a2dc72f5784f6cb3590767d173db5b": {
             "initialAllocation": "7000",
@@ -59930,11 +60009,12 @@
         },
         "0x31261680b036d9d21d0ef67954acd65353d704e9": {
             "initialAllocation": "1040",
-            "currentBalance": "1270.27730074",
+            "currentBalance": "1436.94400074",
             "firstBonus": "68.05823226",
             "secondBonus": "70.30529901",
             "thirdBonus": "91.91376947",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "166.6667"
         },
         "0x8494fbdf5100843ce018f4be3b6dac68eda163d7": {
             "initialAllocation": "1478.41714286",
@@ -59951,11 +60031,12 @@
         },
         "0x56fee41eeed8c3e9a65cc6b56ad5a3358c7a69a9": {
             "initialAllocation": "1000",
-            "currentBalance": "1221.42048148",
+            "currentBalance": "1554.75378148",
             "firstBonus": "65.44060794",
             "secondBonus": "67.60124905",
             "thirdBonus": "88.37862449",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0x624379163676e2ea3007f59ce4512049d0baf2c8": {
             "initialAllocation": "1000",
@@ -61293,11 +61374,12 @@
         },
         "0xab5694a969bee84c88e7ae081ebbc456116ca3d4": {
             "initialAllocation": "128.75",
-            "currentBalance": "157.25788698",
+            "currentBalance": "323.92458698",
             "firstBonus": "8.42547827",
             "secondBonus": "8.70366081",
             "thirdBonus": "11.3787479",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "166.6667"
         },
         "0x01af25621de6e0b0f93c5d335da5e6b10390dce5": {
             "initialAllocation": "6403.31022857",
@@ -62144,11 +62226,12 @@
         },
         "0x06df0998e4c54e1273730a9ee304ccc795b87fd0": {
             "initialAllocation": "1169.9292",
-            "currentBalance": "1428.97548676",
+            "currentBalance": "1762.30878676",
             "firstBonus": "76.56087809",
             "secondBonus": "79.08867522",
             "thirdBonus": "103.39673345",
-            "isEligible": true
+            "isEligible": true,
+            "lgoExchangeRegistrationReward": "333.3333"
         },
         "0xf27d547a5d39c34b91adc93a6e1a4c601f3acfdd": {
             "initialAllocation": "2305.28",
@@ -63995,8 +64078,8 @@
             "isEligible": true
         }
     },
-    "totalUnspentAmount": "100429629.24571072",
-    "holdersWhoLostBonus": 2368,
-    "latestBlockNumber": 9079228,
-    "latestBlockTimestamp": 1575922108
+    "totalUnspentAmount": "100225182.68482501",
+    "holdersWhoLostBonus": 2386,
+    "latestBlockNumber": 9285650,
+    "latestBlockTimestamp": 1579090649
 }
