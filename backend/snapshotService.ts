@@ -24,6 +24,7 @@ export class Holder {
     secondBonus: BigNumber;
     thirdBonus: BigNumber;
     fourthBonus: BigNumber;
+    lgoExchangeRegistrationReward: BigNumber;
     isEligible: boolean;
 
     decrement(value: BigNumber) {
@@ -113,7 +114,10 @@ function handleTransfert(transferEvent: EventLog, snapshot: TokenSnapshot, token
     }
     else if (secondAndThirdBonusFromAddresses.indexOf(fromAddress) > -1) {
         if (toHolder) {
-            if (transferEvent.blockNumber > 8360000) {
+            if (transferEvent.blockNumber > 9000000 ) {
+                toHolder.lgoExchangeRegistrationReward = value;
+            }
+            else if (transferEvent.blockNumber > 8360000 ) {
                 toHolder.thirdBonus = value;
             }
             else {
