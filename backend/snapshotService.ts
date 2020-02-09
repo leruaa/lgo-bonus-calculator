@@ -45,6 +45,7 @@ export class Holder {
         holder.thirdBonus = (json.thirdBonus === undefined ? undefined : new BigNumber(json.thirdBonus));
         holder.fourthBonus = (json.fourthBonus === undefined ? undefined : new BigNumber(json.fourthBonus));
         holder.isEligible = json.isEligible;
+        holder.lgoExchangeRegistrationReward = (json.lgoExchangeRegistrationReward === undefined ? undefined : new BigNumber(json.lgoExchangeRegistrationReward));
         return holder;
     }
 
