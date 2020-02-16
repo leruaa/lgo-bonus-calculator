@@ -436,7 +436,7 @@
         },
         "0xa45a03ae0c111fdb227772d17d221fcf5dbf5e43": {
             "initialAllocation": "294871.56376746",
-            "currentBalance": "79101.82418324",
+            "currentBalance": "0",
             "firstBonus": "19296.57439658",
             "secondBonus": "19933.6860192",
             "isEligible": false
@@ -4856,11 +4856,11 @@
         },
         "0x6d7c88c5309b0b6cd9d8d3450633d15703297fbc": {
             "initialAllocation": "4000",
-            "currentBalance": "4885.6819259",
+            "currentBalance": "0",
             "firstBonus": "261.76243175",
             "secondBonus": "270.40499619",
             "thirdBonus": "353.51449796",
-            "isEligible": true
+            "isEligible": false
         },
         "0xb81193cf9437d461f90c160d8c3413a493bf964c": {
             "initialAllocation": "28571.42857143",
@@ -12991,11 +12991,11 @@
         },
         "0x24ef9d2fedf13780e2120bed8f1945dcf19de26c": {
             "initialAllocation": "3980",
-            "currentBalance": "4861.25351627",
+            "currentBalance": "0",
             "firstBonus": "260.45361959",
             "secondBonus": "269.05297121",
             "thirdBonus": "351.74692547",
-            "isEligible": true
+            "isEligible": false
         },
         "0x0249db93c24d90ad0e0db90b7c01e672b399ff41": {
             "initialAllocation": "3319.31742857",
@@ -14982,11 +14982,11 @@
         },
         "0x32b8dd7b3004deb8d7a26141a04e3ba9baf7cf86": {
             "initialAllocation": "4285.71428571",
-            "currentBalance": "5234.65920632",
+            "currentBalance": "0",
             "firstBonus": "280.45974831",
             "secondBonus": "289.71963877",
             "thirdBonus": "378.76553353",
-            "isEligible": true
+            "isEligible": false
         },
         "0x2622c54a166158e8ca476bc0887841620aa0446c": {
             "initialAllocation": "535.98",
@@ -23296,11 +23296,11 @@
         },
         "0x05beedd7bb61dfd5874db3b98946aeee3fcb5503": {
             "initialAllocation": "20000",
-            "currentBalance": "24428.40962952",
+            "currentBalance": "0",
             "firstBonus": "1308.81215876",
             "secondBonus": "1352.02498095",
             "thirdBonus": "1767.57248981",
-            "isEligible": true
+            "isEligible": false
         },
         "0x47ad3712713c2e0d9d05a6d31f800fcfb3552666": {
             "initialAllocation": "5182.7274",
@@ -23354,11 +23354,11 @@
         },
         "0x5a5f1544712bc578dce9b85c1ac799a84963a15a": {
             "initialAllocation": "400",
-            "currentBalance": "488.5681926",
+            "currentBalance": "0",
             "firstBonus": "26.17624318",
             "secondBonus": "27.04049962",
             "thirdBonus": "35.3514498",
-            "isEligible": true
+            "isEligible": false
         },
         "0x9823618beaa61e734d2fe3a3af38d09d1baf50ca": {
             "initialAllocation": "363.418",
@@ -27791,7 +27791,7 @@
         },
         "0x78807d609228c4823796ea99cb2337fae9bf2009": {
             "initialAllocation": "7952.2292",
-            "currentBalance": "7952.2292",
+            "currentBalance": "0",
             "isEligible": false
         },
         "0x449e969844d08f0192f6898166194e65eb7ee52c": {
@@ -29025,11 +29025,11 @@
         },
         "0x655d9a2577f20d8eeeafd0462e6c0526a946dbdb": {
             "initialAllocation": "790",
-            "currentBalance": "964.92218037",
+            "currentBalance": "0",
             "firstBonus": "51.69808027",
             "secondBonus": "53.40498675",
             "thirdBonus": "69.81911335",
-            "isEligible": true
+            "isEligible": false
         },
         "0xe7b7d194fff9e5f8d4309c391c74512acfe474ad": {
             "initialAllocation": "844.701",
@@ -40959,11 +40959,11 @@
         },
         "0xb687980ae18119f64a7bce0f6edf694697e06599": {
             "initialAllocation": "1226.7812",
-            "currentBalance": "1498.41568397",
+            "currentBalance": "0",
             "firstBonus": "80.28130753",
             "secondBonus": "82.93194143",
             "thirdBonus": "108.42123501",
-            "isEligible": true
+            "isEligible": false
         },
         "0xf89532285e6b6270b9bbe43f99c97614c24d77ab": {
             "initialAllocation": "1000",
@@ -42378,7 +42378,7 @@
         },
         "0x7ab35bf9f0b6c17107958328ed0219460b42373a": {
             "initialAllocation": "133.26",
-            "currentBalance": "7577.98385603",
+            "currentBalance": "8613.48492119",
             "firstBonus": "8.72061541",
             "secondBonus": "9.00854245",
             "thirdBonus": "11.7773355",
@@ -45112,7 +45112,7 @@
         },
         "0xcaf46f0951e122d6000ede644bc406adadd5a44e": {
             "initialAllocation": "20582.7436",
-            "currentBalance": "14999.9996",
+            "currentBalance": "0.9996",
             "isEligible": false
         },
         "0xc4d5c5809ce82b7be193f32de0ead46d923ba3fe": {
@@ -58010,7 +58010,7 @@
         },
         "0xbf6e1b8cd3d5d477de2d4e23a5fd1ec47294f7be": {
             "initialAllocation": "1574.3588",
-            "currentBalance": "306577.98403502",
+            "currentBalance": "6577.98403502",
             "firstBonus": "103.02699698",
             "secondBonus": "106.42862133",
             "thirdBonus": "139.1396652",
@@ -64078,8 +64078,8 @@
             "isEligible": true
         }
     },
-    "totalUnspentAmount": "100078595.12259645",
-    "holdersWhoLostBonus": 2402,
-    "latestBlockNumber": 9450250,
-    "latestBlockTimestamp": 1581273478
+    "totalUnspentAmount": "100043912.62711074",
+    "holdersWhoLostBonus": 2409,
+    "latestBlockNumber": 9490743,
+    "latestBlockTimestamp": 1581811201
 }
